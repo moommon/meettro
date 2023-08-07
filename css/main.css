@@ -79,11 +79,11 @@ header .menu-button-white:hover {
   text-align: center;
 }
 .slider li img {
-  height: 600px;
+  width: 400px;
 }
 .ground {
   width: 100%;
   position: absolute;
-  top: 800px;
+  top: 640px;
   border-top: 1px #000 solid;
 }
