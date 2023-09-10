@@ -1,0 +1,31 @@
+.greeting {
+  width: 800px;
+  height: 250px;
+  /* border: 1.5px solid #000; */
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  left: calc(50vw - 400px);
+  top: 100px;
+  position: relative;
+}
+
+.greeting .new-tt {
+  width: 300px;
+}
+
+.greeting .greeting-text {
+  font-size: 20px;
+  width: 500px;
+  margin: 110px 0;
+}
+.projectname-inputbox {
+  width: 600px;
+  height: 200px;
+  border: 1.5px solid #000;
+  left: calc(50vw - 300px);
+  position: relative;
+  top: 200px;
+}
+.projectname-inputbox .projectname-input {
+}

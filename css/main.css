@@ -10,6 +10,7 @@ a {
   color: #000;
 }
 
+/* header */
 header {
   height: 40px;
   width: 100vw;
@@ -18,24 +19,27 @@ header {
 }
 
 header div {
-  position: absolute;
-  width: 40px;
+  /* position: absolute; */
+  position: relative;
+  /* width: 40px; */
 }
 
 header img {
-  height: 40px;
+  /* height: 40px; */
   position: absolute;
 }
 
 header .main-logo {
-  left: 20px;
+  left: 30px;
+  height: 30px;
+  margin-top: 5px;
 }
 
 header .main-logo-white:hover {
   display: none;
 }
 
-header .plus-button {
+/* header .plus-button {
   left: calc(50vw - 20px);
   width: 40px;
   height: 40px;
@@ -49,6 +53,21 @@ header .menu-button {
 }
 header .menu-button-white:hover {
   display: none;
+} */
+header .main-menubox {
+  position: absolute;
+  height: 40px;
+  right: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+header .main-menubox .menubox-menu {
+  width: 36px;
+}
+header .main-menubox .menubox-menu img {
+  width: 36px;
+  height: 36px;
 }
 
 /* horizontal-scroll */
