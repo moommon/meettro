@@ -1,0 +1,22 @@
+.home-logo-box {
+  height: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 100px;
+}
+
+.home-logo-box .home-logo {
+  height: 200px;
+}
+
+.home-ground {
+  border-top: 2px solid #000;
+  width: 100%;
+  height: 1600px;
+}
+
+#home-canvas {
+  background-color: white;
+  cursor: pointer;
+}

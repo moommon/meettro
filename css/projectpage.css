@@ -1,0 +1,9 @@
+.projectpage-sky {
+  width: 100vw;
+  height: 500px;
+}
+.projectpage-ground {
+  width: 100vw;
+  height: 500px;
+  border-top: 2px #000 solid;
+}

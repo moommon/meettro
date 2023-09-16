@@ -31,7 +31,7 @@
   width: 300px;
   height: 50px;
   border: 0;
-  border-bottom: solid #000 1.5px;
+  border-bottom: solid #000 2px;
   outline: none;
   font-size: 24px;
   padding: 0 10px;
@@ -39,13 +39,14 @@
 }
 .startbox {
   padding: 10px 30px;
-  border: 1.5px solid #000;
+  border: 2px solid #000;
   font-size: 20px;
   position: relative;
   top: 180px;
   left: calc(50vw - 66px);
+  transition: 0.3s;
 }
 .startbox:hover {
-  background-color: #000;
+  background-color: #222;
   color: #fff;
 }
