@@ -7,3 +7,26 @@
   height: 500px;
   border-top: 2px #000 solid;
 }
+
+/* 프로필 */
+.projectpage-sky .profile-box {
+  position: relative;
+  top: 350px;
+  display: flex;
+  gap: 200px;
+}
+.projectpage-sky .profile-box .profile {
+  width: 90px;
+  display: inline;
+}
+.projectpage-sky .profile-box .profile-img-box {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  border: 1.5px solid #000;
+}
+.projectpage-sky .profile-box .profile-name {
+  margin-top: 15px;
+  font-size: 20px;
+  text-align: center;
+}

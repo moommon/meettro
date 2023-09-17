@@ -80,7 +80,7 @@ header .main-menubox .menubox-menu img {
   align-items: flex-start;
   position: absolute;
   height: 400px;
-  top: 550px;
+  top: 500px;
   left: calc(50% - 570px);
   transition: transform 0.3s;
 }
@@ -103,6 +103,6 @@ header .main-menubox .menubox-menu img {
 .ground {
   width: 100%;
   position: absolute;
-  top: 800px;
+  top: 750px;
   border-top: 2px #000 solid;
 }

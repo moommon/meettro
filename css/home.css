@@ -1,5 +1,9 @@
+body {
+  cursor: url("./images/삽1.png");
+}
+
 .home-logo-box {
-  height: 800px;
+  height: 750px;
   display: flex;
   justify-content: center;
   align-items: center;

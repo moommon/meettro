@@ -1,0 +1,288 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+.container {
+  position:relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  top: calc(50vh - 330px);
+}
+
+.drop-area {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  border: 3px solid black; /* 테두리를 검은색으로 설정 */
+  border-radius: 50%;
+}
+
+.draggable {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* ㄱ */
+.draggable:nth-child(1) {
+  top: -33px;
+  left: 256px;
+}
+/* ㄴ */
+.draggable:nth-child(2) {
+  top: -26px;
+  left: 303px;
+}
+.draggable:nth-child(3) {
+  top: -13px;
+  left: 348px;
+}
+
+/* .draggable:nth-child(4) */
+.draggable:nth-child(4) {
+  top: 9px;
+  left: 391px;
+}
+
+/* .draggable:nth-child(5)ㅁ */
+.draggable:nth-child(5) {
+  top: 35px;
+  left: 428px;
+}
+
+/* .draggable:nth-child(6)ㅂ */
+.draggable:nth-child(6) {
+  top: 70px;
+  left: 461px;
+}
+
+/* .draggable:nth-child(7)ㅅ */
+.draggable:nth-child(7) {
+  top: 111px;
+  left: 486px;
+}
+
+/* .draggable:nth-child(8) ㅇ*/
+.draggable:nth-child(8) {
+  top: 152px;
+  left: 507px;
+}
+
+/* .draggable:nth-child(9) ㅈ*/
+.draggable:nth-child(9) {
+  top: 194px;
+  left: 522px;
+}
+
+/* .draggable:nth-child(10) ㅊ*/
+.draggable:nth-child(10) {
+  top: 244px;
+  left: 523px;
+}
+
+/* .draggable:nth-child(11) ㅋ*/
+.draggable:nth-child(11) {
+  top: 292px;
+  left: 519px;
+}
+
+/* .draggable:nth-child(12) ㅌ*/
+.draggable:nth-child(12) {
+  top: 337px;
+  left: 506px;
+}
+
+/* .draggable:nth-child(13) ㅍ*/
+.draggable:nth-child(13) {
+  top: 380px;
+  left: 487px;
+}
+
+/* .draggable:nth-child(14) ㅎ*/
+.draggable:nth-child(14) {
+  top: 420px;
+  left: 462px;
+}
+
+/* .draggable:nth-child(15) A*/
+.draggable:nth-child(15) {
+  top: 449px;
+  left: 427px;
+}
+
+/* .draggable:nth-child(16) B*/
+.draggable:nth-child(16) {
+  top: 476px;
+  left: 397px;
+}
+
+/* .draggable:nth-child(17) C*/
+.draggable:nth-child(17) {
+  top: 497px;
+  left: 361px;
+}
+
+/* .draggable:nth-child(18) D*/
+.draggable:nth-child(18) {
+  top: 509px;
+  left: 322px;
+}
+
+/* .draggable:nth-child(19) E*/
+.draggable:nth-child(19) {
+  top: 520px;
+  left: 281px;
+}
+
+/* .draggable:nth-child(20) F*/
+.draggable:nth-child(20) {
+  top: 521px;
+  left: 240px;
+}
+
+/* .draggable:nth-child(21) G*/
+.draggable:nth-child(21) {
+  top: 517px;
+  left: 199px;
+}
+
+/* .draggable:nth-child(22) H*/
+.draggable:nth-child(22) {
+  top: 507px;
+  left: 158px;
+}
+
+/* .draggable:nth-child(23) I*/
+.draggable:nth-child(23) {
+  top: 493px;
+  left: 123px;
+}
+
+/* .draggable:nth-child(24) J*/
+.draggable:nth-child(24) {
+  top: 475px;
+  left: 92px;
+}
+
+/* .draggable:nth-child(25) K*/
+.draggable:nth-child(25) {
+  top: 450px;
+  left: 61px;
+}
+
+/* .draggable:nth-child(26) L*/
+.draggable:nth-child(26) {
+  top: 421px;
+  left: 34px;
+}
+
+/* .draggable:nth-child(27) M*/
+.draggable:nth-child(27) {
+  top: 385px;
+  left: 8px;
+}
+
+/* .draggable:nth-child(28) N*/
+.draggable:nth-child(28) {
+  top: 347px;
+  left: -12px;
+}
+
+/* .draggable:nth-child(29) O*/
+.draggable:nth-child(29) {
+  top: 305px;
+  left: -24px;
+}
+
+/* .draggable:nth-child(30) P*/
+.draggable:nth-child(30) {
+  top: 265px;
+  left: -30px;
+}
+
+/* .draggable:nth-child(31) Q*/
+.draggable:nth-child(31) {
+  top: 223px;
+  left: -30px;
+}
+
+/* .draggable:nth-child(32) R*/
+.draggable:nth-child(32) {
+  top: 184px;
+  left: -24px;
+}
+
+/* .draggable:nth-child(33) S*/
+.draggable:nth-child(33) {
+  top: 144px;
+  left: -12px;
+}
+
+/* .draggable:nth-child(34) T*/
+.draggable:nth-child(34) {
+  top: 105px;
+  left: 5px;
+}
+
+/* .draggable:nth-child(35) U*/
+.draggable:nth-child(35) {
+  top: 70px;
+  left: 29px;
+}
+
+/* .draggable:nth-child(36) V*/
+.draggable:nth-child(36) {
+  top: 39px;
+  left: 57px;
+}
+
+/* .draggable:nth-child(37) W*/
+.draggable:nth-child(37) {
+  top: 12px;
+  left: 92px;
+}
+
+/* .draggable:nth-child(38) X*/
+.draggable:nth-child(38) {
+  top: -8px;
+  left: 133px;
+}
+
+/* .draggable:nth-child(39) Y*/
+.draggable:nth-child(39) {
+  top: -22px;
+  left: 173px;
+}
+
+/* .draggable:nth-child(40) Z*/
+.draggable:nth-child(40) {
+  top: -29px;
+  left: 212px;
+}
+
+/* 원형 배치 스타일링
+.draggable:nth-child(1) { transform: translate(500px, 0); }
+.draggable:nth-child(2) { transform: translate(212px, 212px); }
+.draggable:nth-child(3) { transform: translate(0, 300px); }
+.draggable:nth-child(4) { transform: translate(-212px, 212px); }
+.draggable:nth-child(5) { transform: translate(-300px, 0); }
+.draggable:nth-child(6) { transform: translate(-212px, -212px); }
+.draggable:nth-child(7) { transform: translate(0, -300px); }
+.draggable:nth-child(8) { transform: translate(212px, -212px); }
+.draggable:nth-child(9) { transform: translate(259px, 150px); }
+.draggable:nth-child(10) { transform: translate(259px, -150px); }
+.draggable:nth-child(11) { transform: translate(150px, -259px); }
+.draggable:nth-child(12) { transform: translate(-150px, -259px); }
+.draggable:nth-child(13) { transform: translate(-259px, -150px); }
+.draggable:nth-child(14) { transform: translate(-259px, 150px); }
+.draggable:nth-child(15) { transform: translate(-150px, 259px); }
+.draggable:nth-child(16) { transform: translate(150px, 259px); } */
