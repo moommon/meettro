@@ -1,3 +1,7 @@
+body {
+  font-family: "SUIT", sans-serif;
+}
+
 .projectpage-sky {
   width: 100vw;
   height: 500px;
@@ -8,14 +12,162 @@
   border-top: 2px #000 solid;
 }
 
+/* 메뉴버튼 */
+
+/* 팝업 */
+
+.modal form {
+  margin: 0 auto;
+  width: 510px;
+}
+.modal input {
+  height: 48px;
+  margin-top: 5px;
+  border: none;
+  border-bottom: 1.2px solid #000;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 0;
+}
+.modal input::placeholder {
+  font-size: 14px;
+  color: #000;
+  font-weight: 400;
+}
+
+.modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(1.1);
+  transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+  z-index: 1;
+}
+.modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  width: 600px;
+  height: 700px;
+  border: 1.5px solid #000;
+  padding-top: 5px;
+}
+.modal .modal-content .title {
+  height: 85px;
+  border-bottom: 1.8px solid #000;
+  margin: 0 35px;
+  font-size: 24px;
+  align-items: center;
+  display: flex;
+}
+.modal .modal-content label {
+  font-size: 14px;
+  font-weight: 500;
+  display: block;
+  margin-top: 20px;
+}
+.modal .modal-content .id-search {
+  /* border-bottom: 1px solid #000; */
+  width: 480px;
+  padding-left: 30px;
+  background-image: url(/images/+.png);
+  background-repeat: no-repeat;
+  background-position: 0;
+}
+.modal .modal-content .team-list {
+  margin: 0 auto;
+  width: 510px;
+  padding-top: 20px;
+}
+.modal .modal-content .team-list .team-list-person {
+  height: 75px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+.modal .modal-content .team-list .team-list-person .team-list-profile {
+  width: 42px;
+  height: 42px;
+  display: flex;
+  position: relative;
+  margin-right: 13px;
+  border-radius: 50%;
+  border: 2px solid #000;
+}
+.modal .modal-content .team-list .team-list-person .team-list-name {
+  font-size: 18px;
+  display: flex;
+}
+.modal .modal-content .todo-form {
+  display: flex;
+  gap: 40px;
+}
+.modal .modal-content .todo-add {
+  width: 250px;
+  padding-left: 30px;
+  background-image: url(/images/+.png);
+  background-repeat: no-repeat;
+  background-position: 0;
+}
+.modal .modal-content .target-time {
+  width: 70px;
+}
+.modal .modal-content .times {
+  font-size: 20px;
+  margin-left: 6px;
+}
+.modal .modal-content .add-button {
+  background-color: #fff;
+  margin-left: 16px;
+  height: 30px;
+  width: 55px;
+  border: 1.3px solid #000;
+  font-size: 20px;
+}
+
+.modal .close-button {
+  right: 35px;
+  top: 20px;
+  position: absolute;
+  width: 50px;
+  line-height: 50px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 0.25rem;
+  font-size: 50px;
+  font-weight: 100;
+  z-index: 1;
+}
+
+.show-modal-team {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+  transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
+.show-modal-todo {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+  transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
+
 /* 프로필 */
 .projectpage-sky .profile-box {
   position: relative;
   top: 350px;
   display: flex;
-  gap: 200px;
+  padding: 0 100px;
 }
 .projectpage-sky .profile-box .profile {
+  margin: 0 auto;
   width: 90px;
   display: inline;
 }
