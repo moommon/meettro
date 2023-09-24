@@ -20,7 +20,7 @@
     .addEventListener("dragover", dragOver);
 
   function dragStart(e) {
-    e.dataTransfer.setData("Text", this.className);
+    e.dataTransfer.setData("text/plain", e.target.textContent);
     this.className += " dragging";
     setTimeout(() => (this.className = "draggable"), 0);
 
@@ -33,10 +33,24 @@
 
   function dragDrop(e) {
     e.preventDefault();
-    const x = e.clientX - xpos - e.target.getBoundingClientRect().left;
-    const y = e.clientY - ypos - e.target.getBoundingClientRect().top;
-    targ.style.left = x + "px";
-    targ.style.top = y + "px";
+    const data = e.dataTransfer.getData("text/plain");
+
+    // 복제된 객체 생성
+    const clonedElement = document.createElement("div");
+    clonedElement.className = "draggable";
+    clonedElement.textContent = data;
+    clonedElement.draggable = true;
+    clonedElement.style.position = "absolute";
+    clonedElement.style.left =
+      e.clientX -
+      document.querySelector(".drop-area").getBoundingClientRect().left +
+      "px";
+    clonedElement.style.top =
+      e.clientY -
+      document.querySelector(".drop-area").getBoundingClientRect().top +
+      "px";
+    // 드롭 영역에 복제된 객체 추가
+    document.querySelector(".drop-area").appendChild(clonedElement);
   }
 
   function dragOver(e) {
