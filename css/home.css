@@ -1,5 +1,5 @@
-body {
-  cursor: url("./images/삽1.png");
+* {
+  cursor: url("/images/dig1.png") 100 100, auto;
 }
 
 .home-logo-box {
@@ -22,5 +22,4 @@ body {
 
 #home-canvas {
   background-color: white;
-  cursor: pointer;
 }
