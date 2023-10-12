@@ -1,0 +1,270 @@
+* {
+  font-family: "SUIT", sans-serif;
+  cursor: auto;
+}
+a {
+  text-decoration: none;
+}
+
+header {
+  margin-top: 30px;
+  height: 50px;
+}
+
+header .previous {
+  left: 30px;
+  position: relative;
+}
+
+header .previous-button {
+  width: 50px;
+}
+header .test-logo-ee-img {
+  width: 200px;
+  position: relative;
+  top: -5px;
+  left: calc(50vw - 160px);
+}
+
+/* title */
+.test-title-box {
+  color: #222;
+  top: 130px;
+  text-align: center;
+  position: relative;
+}
+
+.test-title-box .test-title {
+  font-size: 72px;
+  font-weight: 700;
+  line-height: 130%;
+}
+
+.test-title-box .test-title-ver {
+  font-size: 28px;
+  font-weight: 400;
+  margin-top: 10px;
+}
+
+.test-title-box .test-subtitle {
+  margin-top: 30px;
+  font-size: 32px;
+  font-weight: 500;
+}
+
+.start-box {
+  text-align: center;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-direction: column;
+  top: 320px;
+  background-image: url(/images/ground.png);
+  background-size: 2000px;
+  border-top: 2px solid #222;
+}
+
+.start-box .test-start-button {
+  height: 90px;
+  width: 280px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 36px;
+  font-weight: 800;
+  letter-spacing: 10px;
+  margin-top: 60px;
+}
+
+/* question */
+
+.question-box {
+  position: relative;
+  font-family: "SUIT", sans-serif;
+  width: 680px;
+  height: 230px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 120px auto 0;
+  border: 2px #222 solid;
+  z-index: 1;
+}
+.question-box .number {
+  font-size: 36px;
+  font-weight: 800;
+  color: #222;
+  margin-bottom: 30px;
+  margin: 0 50px 30px 50px;
+}
+.question-box .question {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 130%;
+  margin: 0 50px;
+  word-break: keep-all;
+}
+.grass-box {
+  height: 100px;
+  position: relative;
+  margin-top: 20px;
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+}
+.grass-box img {
+  height: 100px;
+}
+.grass-box .leg {
+  height: 140px;
+  position: relative;
+  top: -35px;
+}
+.grass-box .grass1 {
+  position: relative;
+}
+.grass-box .grass2 {
+  position: relative;
+}
+.choice-box {
+  width: 100vw;
+  position: relative;
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  gap: 20px;
+  padding: 40px 0 150px;
+  background-image: url(/images/ground.png);
+  background-size: 2000px;
+  border-top: 2px #222 solid;
+}
+.choice-box .choice {
+  margin: 0 auto;
+  width: 680px;
+  height: 120px;
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.question-tt {
+  width: 100px;
+  margin-top: -77px;
+  margin-left: 5%;
+  transition: 0.2s;
+  top: calc(100vh - 40px);
+  position: fixed;
+}
+.progress {
+  width: 100vw;
+  height: 20px;
+
+  margin: 0 auto 60px;
+  /* border: 2px solid #222; */
+  top: calc(100vh - 20px);
+  position: fixed;
+}
+.progress .value {
+  width: 12.5%;
+  height: 20px;
+  background-color: #222;
+  transition: 0.2s;
+}
+
+/* result */
+.test-result-body {
+  background-image: url(/images/ground.png);
+  background-size: 2000px;
+}
+
+.result-tt {
+  width: 100px;
+  margin: 0 auto;
+  display: block;
+}
+.result-box {
+  width: 460px;
+  height: 640px;
+  border: 2px solid #222;
+  background-color: #fff;
+  margin: 0 auto;
+  text-align: center;
+}
+.result-box .page-title {
+  font-size: 24px;
+  font-weight: 400;
+  margin: 50px 0 20px;
+}
+.result-box .page-tool {
+  font-size: 68px;
+  font-weight: 700;
+  letter-spacing: -5px;
+}
+.result-box .page-style {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.tool-img {
+  width: 380px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+.result {
+  max-width: 600px;
+  margin: 0 auto;
+}
+.result .box {
+  min-height: 70px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.4;
+  text-align: center;
+}
+.result h3 {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.4;
+  text-align: center;
+  margin: 40px auto 20px;
+}
+.result .jobs {
+  height: 200px;
+  display: flex;
+  gap: 20px;
+}
+.result .job {
+  flex: 1;
+  background-color: #ffffff;
+  background-position: center center;
+  background-repeat: no-repeat;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.result .lecture img {
+  margin-bottom: 40px;
+  width: 100%;
+}
+.result-button-box {
+  display: flex;
+  width: 464px;
+  margin: 30px auto;
+  justify-content: space-between;
+}
+.result-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  width: 214px;
+  font-size: 20px;
+  font-weight: 500;
+}

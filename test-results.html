@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- css초기화 -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"
+    />
+
+    <!-- 폰트 suit -->
+    <link
+      href="https://cdn.jsdelivr.net/gh/sunn-us/SUIT/fonts/static/woff2/SUIT.css"
+      rel="stylesheet"
+    />
+
+    <!-- <link rel="stylesheet" href="./css/home.css" /> -->
+    <link rel="stylesheet" href="./css/test.css" />
+    <link rel="stylesheet" href="./css/common.css" />
+
+    <script type="module" defer src="./js/questions.js"></script>
+    <script type="module" defer src="./js/results.js"></script>
+    <!-- <script type="module" defer src="./js/share.js"></script> -->
+
+    <link rel="icon" href="favicon.png" />
+    <title>meettro</title>
+  </head>
+  <body class="test-result-body">
+    <header>
+      <a href="test.html" class="previous">
+        <img src="./images/icon-left.png" class="previous-button" />
+      </a>
+      <a><img src="./images/logo-ee.png" class="test-logo-ee-img" /></a>
+    </header>
+
+    <img class="result-tt" src="images/tt-shortstop.gif" />
+
+    <!-- <h2 class="page-subtitle">내 본캐는?!</h2> -->
+    <div class="result-box">
+      <div class="page-title"></div>
+      <span class="page-tool"></span><span class="page-style"> 스타일</span>
+      <img src="" alt="도구" class="tool-img" />
+      <div class="result">
+        <div class="box"></div>
+      </div>
+    </div>
+
+    <div class="result-button-box">
+      <div class="btn result-button share-or-copy">결과 공유하기</div>
+      <a href="./test.html" class="btn result-button result-retry"
+        >다시 테스트하기</a
+      >
+    </div>
+  </body>
+</html>

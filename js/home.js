@@ -13,6 +13,9 @@ let context = canvas.getContext("2d");
 context.fillStyle = start_background_color;
 context.fillRect(0, 0, canvas.width, canvas.height);
 
+// let backImg = new Image();
+// backImg.src = "/images/ground.png";
+
 let is_drawing = false;
 
 canvas.addEventListener("touchstart", start, false);
@@ -22,6 +25,7 @@ canvas.addEventListener("mousemove", draw, false);
 
 function start(event) {
   is_drawing = true;
+
   context.beginPath();
   context.moveTo(
     event.clientX - canvas.offsetLeft,
@@ -36,7 +40,7 @@ function draw(event) {
       event.clientX - canvas.offsetLeft,
       event.pageY - canvas.offsetTop
     );
-    context.strokeStyle = "black";
+    context.strokeStyle = "#222";
     context.lineWidth = "50";
     context.lineCap = "round";
     context.lineJoin = "round";
