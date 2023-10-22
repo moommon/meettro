@@ -26,6 +26,7 @@
     <link rel="stylesheet" href="./css/projectpage.css" />
 
     <script defer src="./js/popup.js"></script>
+    <script defer src="./js/projectdetail.js"></script>
 
     <title>meettro</title>
     <link rel="icon" href="favicon.png" />
@@ -33,19 +34,18 @@
   <body>
     <header class="header">
       <div class="main-logo">
-        <a href="./index.html">
+        <a href="./main.html">
           <img src="./images/icon-M.png" class="main-logo main-logo-black" />
         </a>
       </div>
+      <div class="project-name">: new project</div>
       <div class="main-menubox">
         <div class="menubox-menu">
           <div class="trigger-team"><img src="./images/icon-TEAM.png" /></div>
           <!-- <a href="./newproject.html"> <img src="./images/plus-0910.png" /></a> -->
         </div>
         <div class="menubox-menu">
-          <a href="./profile-draw.html">
-            <img src="./images/icon-MENU.png"
-          /></a>
+          <div class="trigger-todo"><img src="./images/icon-MENU.png" /></div>
         </div>
         <div class="menubox-menu">
           <div class="trigger-todo">
@@ -69,11 +69,17 @@
         </form>
         <div class="team-list">
           <div class="team-list-person">
-            <img class="team-list-profile" />
+            <img
+              class="team-list-profile"
+              src="./images/profile-sample02.png"
+            />
             <div class="team-list-name">사용자 이름</div>
           </div>
           <div class="team-list-person">
-            <img class="team-list-profile" />
+            <img
+              class="team-list-profile"
+              src="./images/profile-sample03.png"
+            />
             <div class="team-list-name">사용자 이름</div>
           </div>
         </div>
@@ -106,39 +112,60 @@
         </form>
 
         <div class="team-list">
-          <div class="team-list-person">
-            <img class="team-list-profile" />
-            <div class="team-list-name">사용자 이름</div>
-          </div>
-          <div class="team-list-person">
-            <img class="team-list-profile" />
-            <div class="team-list-name">사용자 이름</div>
-          </div>
+          <div class="team-list-person"></div>
         </div>
       </div>
     </div>
     <div class="projectpage-sky">
       <div class="profile-box">
-        <div class="profile">
+        <div class="profile project-profile-01">
           <div class="profile-img-box">
-            <img />
+            <img src="./images/profile-sample01.png" class="profile-img" />
           </div>
-          <div class="profile-name">NAME</div>
+          <div class="profile-name">ME</div>
         </div>
-        <div class="profile">
+        <div class="profile project-profile-02">
           <div class="profile-img-box">
-            <img />
+            <img src="./images/profile-sample02.png" class="profile-img" />
           </div>
-          <div class="profile-name">NAME</div>
+          <div class="profile-name">heejin</div>
         </div>
-        <div class="profile">
+        <div class="profile project-profile-03">
           <div class="profile-img-box">
-            <img />
+            <img src="./images/profile-sample03.png" class="profile-img" />
           </div>
-          <div class="profile-name">NAME</div>
+          <div class="profile-name">Sauce</div>
+        </div>
+        <div class="profile project-profile-04">
+          <div class="profile-img-box">
+            <img src="./images/profile-sample04.png" class="profile-img" />
+          </div>
+          <div class="profile-name">mon</div>
         </div>
       </div>
     </div>
-    <div class="projectpage-ground"></div>
+    <div class="projectpage-ground">
+      <!-- <div id="ground-line-contianer"></div> -->
+      <img
+        class="projectdetial-sample"
+        src="./images/projectdetail-sample00.png"
+      />
+      <img
+        class="projectdetial-sample"
+        src="./images/projectdetail-sample01.png"
+      />
+      <img
+        class="projectdetial-sample"
+        src="./images/projectdetail-sample02.png"
+      />
+      <img
+        class="projectdetial-sample"
+        src="./images/projectdetail-sample03.png"
+      />
+      <img
+        class="projectdetial-sample"
+        src="./images/projectdetail-sample04.png"
+      />
+    </div>
   </body>
 </html>

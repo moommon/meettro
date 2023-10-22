@@ -7,7 +7,7 @@ body {
 
 a {
   text-decoration: none;
-  color: #000;
+  color: #222;
 }
 
 /* header */
@@ -26,11 +26,11 @@ header div {
 
 header img {
   /* height: 40px; */
-  position: absolute;
+  position: relative;
 }
 
 header .main-logo {
-  left: 30px;
+  left: 20px;
   height: 55px;
   margin-top: -5px;
 }

@@ -16,6 +16,30 @@
   display: block;
 }
 
+.home-deco .home-grass {
+  position: absolute;
+  top: 650px;
+  height: 100px;
+  left: 10%;
+}
+.home-deco .home-tool1 {
+  position: absolute;
+  top: 670px;
+  height: 100px;
+  left: 75%;
+}
+.home-deco .home-tool2 {
+  position: absolute;
+  top: 670px;
+  height: 100px;
+  left: 80%;
+}
+.home-deco .home-tool3 {
+  position: absolute;
+  top: 670px;
+  height: 100px;
+  left: 85%;
+}
 .home-ground {
   border-top: 2px solid #000;
   width: 100%;
@@ -36,15 +60,40 @@
 } */
 
 .home-start-button-img {
-  width: 400px;
+  width: 384px;
   position: absolute;
   top: 750px;
   left: 40%;
 }
 
 .home-test-button-img {
-  width: 400px;
+  width: 432px;
+  position: absolute;
+  top: 1560px;
+  left: 0%;
+}
+
+.home-tt-button-img {
+  width: 370px;
+  position: absolute;
+  top: 1100px;
+  left: 75%;
+}
+.home-story-button-img {
+  width: 336px;
   position: absolute;
   top: 1000px;
-  left: 5%;
+  left: 7%;
+}
+.home-dp-button-img {
+  width: 360px;
+  position: absolute;
+  top: 1800px;
+  left: 65%;
+}
+.home-guide-button-img {
+  width: 360px;
+  position: absolute;
+  top: 1420px;
+  left: 45%;
 }

@@ -1,0 +1,96 @@
+* {
+  font-family: "SUIT", sans-serif;
+  cursor: auto;
+}
+a {
+  text-decoration: none;
+}
+
+header {
+  margin-top: 30px;
+  height: 50px;
+}
+
+header .previous {
+  left: 30px;
+  position: relative;
+}
+
+header .previous-button {
+  width: 50px;
+}
+header .next {
+  left: 82%;
+  position: relative;
+}
+header .next-button {
+  width: 50px;
+}
+header .test-logo-ee-img {
+  width: 200px;
+  position: relative;
+  top: -5px;
+  left: calc(50vw - 160px);
+}
+.dp-img {
+  width: 100vw;
+}
+
+/* tt */
+
+.tt-info {
+  margin: 20px auto;
+  display: block;
+  width: 800px;
+  height: 500px;
+  color: #222;
+}
+
+.tt-info .tt-img {
+  width: 280px;
+  margin-top: 50px;
+}
+.tt-info .tt-text-box {
+  display: inline-block;
+}
+.tt-info .tt-text-box .tt-title-text {
+  color: #222;
+  font-family: SUIT;
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.tt-info .tt-text-box .tt-text {
+  color: #222;
+  font-family: SUIT;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 32px;
+}
+
+.tt-gif-box {
+  width: 100vw;
+  border-bottom: 3px solid #222;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-end;
+}
+
+.tt-gif-box .tt-gif-1 {
+  width: 170px;
+  height: 170px;
+  padding-left: 30px;
+}
+.tt-gif-box .tt-gif-2 {
+  width: 300px;
+}
+.tt-gif-box .tt-gif-3 {
+  width: 300px;
+}
+
+.logo-gif {
+  width: 800px;
+  display: block;
+  margin: 500px auto;
+}

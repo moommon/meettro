@@ -102,7 +102,7 @@ export const results = [
   {
     title: "무엇보다 행동이 먼저!",
     tool: "손",
-    character: "/images/삽.png",
+    character: "/images/손.png",
     results: ["무엇보다 행동이 먼저인 손!"],
   },
   {
@@ -120,13 +120,13 @@ export const results = [
   {
     title: "효율적으로 많은 일을 해결하는",
     tool: "포크레인",
-    character: "/images/삽.png",
+    character: "/images/다이너마이트.png",
     results: ["효율적으로 많은 일을 해결하는 포크레인!"],
   },
   {
     title: "남다른 아이디어로 한방을 노리는",
     tool: "다이너마이트",
-    character: "/images/삽.png",
+    character: "/images/다이너마이트.png",
     results: ["남다른 아이디어로 한방을 노리는 다이너마이트!"],
   },
 ];

@@ -1,7 +1,13 @@
 body {
   font-family: "SUIT", sans-serif;
 }
-
+.project-name {
+  position: relative;
+  font-size: 22px;
+  margin-top: 8px;
+  margin-left: 50px;
+  font-weight: 400;
+}
 .projectpage-sky {
   width: 100vw;
   height: 500px;
@@ -177,8 +183,43 @@ body {
   border-radius: 50%;
   border: 1.5px solid #000;
 }
+.projectpage-sky .profile-box .profile-img-box .profile-img {
+  width: 90px;
+}
 .projectpage-sky .profile-box .profile-name {
   margin-top: 15px;
   font-size: 20px;
   text-align: center;
+}
+
+.projectpage-ground {
+}
+
+.projectpage-ground #ground-line-contianer {
+  width: 98vw;
+  padding: 30px 0 0 30px;
+  margin: 0 auto;
+  transition: 5s;
+}
+
+.projectpage-ground .projectdetial-sample {
+  width: 100vw;
+}
+
+.projectpage-ground .projectdetial-sample:nth-child(1) {
+}
+
+.projectpage-ground .projectdetial-sample:nth-child(2) {
+  display: none;
+}
+
+.projectpage-ground .projectdetial-sample:nth-child(3) {
+  display: none;
+}
+
+.projectpage-ground .projectdetial-sample:nth-child(4) {
+  display: none;
+}
+.projectpage-ground .projectdetial-sample:nth-child(5) {
+  display: none;
 }

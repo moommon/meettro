@@ -47,7 +47,7 @@ header .test-logo-ee-img {
 }
 
 .test-title-box .test-subtitle {
-  margin-top: 30px;
+  margin-top: 70px;
   font-size: 32px;
   font-weight: 500;
 }
@@ -59,6 +59,7 @@ header .test-logo-ee-img {
   justify-content: center;
   align-items: center;
   width: 100%;
+  height: 320px;
   flex-direction: column;
   top: 320px;
   background-image: url(/images/ground.png);
@@ -68,14 +69,14 @@ header .test-logo-ee-img {
 
 .start-box .test-start-button {
   height: 90px;
-  width: 280px;
+  width: 260px;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 36px;
   font-weight: 800;
   letter-spacing: 10px;
-  margin-top: 60px;
+  margin-top: 30px;
 }
 
 /* question */
@@ -263,7 +264,7 @@ header .test-logo-ee-img {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100px;
+  height: 80px;
   width: 214px;
   font-size: 20px;
   font-weight: 500;

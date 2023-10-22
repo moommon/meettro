@@ -5,21 +5,49 @@ body {
   height: 100%;
   overflow: hidden;
 }
+header {
+  margin-top: 30px;
+  height: 50px;
+}
 
+header .previous {
+  left: 30px;
+  position: relative;
+}
+
+header .previous-button {
+  width: 50px;
+}
+header .test-logo-ee-img {
+  width: 200px;
+  position: relative;
+  top: -5px;
+  left: calc(50vw - 160px);
+}
+.profile-draw {
+  height: auto;
+}
 .container {
-  position:relative;
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100%;
-  top: calc(50vh - 330px);
+  /* top: calc(50vh - 330px); */
+  margin-top: 9%;
+}
+
+.btn_layer {
+  position: relative;
+  display: flex;
 }
 
 .drop-area {
   position: relative;
   width: 500px;
   height: 500px;
-  border: 3px solid black; /* 테두리를 검은색으로 설정 */
+  border: 2.5px solid black;
+  /* 테두리를 검은색으로 설정 */
   border-radius: 50%;
 }
 
@@ -32,16 +60,19 @@ body {
   justify-content: center;
   align-items: center;
 }
+
 /* ㄱ */
 .draggable:nth-child(1) {
   top: -33px;
   left: 256px;
 }
+
 /* ㄴ */
 .draggable:nth-child(2) {
   top: -26px;
   left: 303px;
 }
+
 .draggable:nth-child(3) {
   top: -13px;
   left: 348px;
@@ -286,3 +317,46 @@ body {
 .draggable:nth-child(14) { transform: translate(-259px, 150px); }
 .draggable:nth-child(15) { transform: translate(-150px, 259px); }
 .draggable:nth-child(16) { transform: translate(150px, 259px); } */
+
+button {
+  all: unset;
+}
+
+.profile-button-box {
+  display: flex;
+  width: 464px;
+  margin: 100px auto 0;
+  justify-content: space-between;
+  text-align: center;
+  position: inherit;
+}
+.profile-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  width: 214px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.profilename-inputbox {
+  width: 600px;
+  height: 100px;
+  text-align: center;
+  left: calc(50vw - 300px);
+  position: relative;
+  top: 100px;
+  color: #222;
+}
+.profilename-inputbox .profilename-input {
+  width: 300px;
+  height: 50px;
+  border: 0;
+  border-bottom: solid #222 2px;
+  outline: none;
+  font-size: 24px;
+  padding: 0 10px;
+  text-align: center;
+  color: #222;
+}
