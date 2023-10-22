@@ -201,12 +201,17 @@ body {
   margin: 0 auto;
   transition: 5s;
 }
-
+.projectpage-ground .projectdetial-sample-default {
+  width: 100vw;
+}
+.projectpage-ground .projectdetial-sample-click {
+  width: 100vw;
+}
 .projectpage-ground .projectdetial-sample {
   width: 100vw;
 }
 
-.projectpage-ground .projectdetial-sample:nth-child(1) {
+/* .projectpage-ground .projectdetial-sample:nth-child(1) {
 }
 
 .projectpage-ground .projectdetial-sample:nth-child(2) {
@@ -222,4 +227,25 @@ body {
 }
 .projectpage-ground .projectdetial-sample:nth-child(5) {
   display: none;
+} */
+
+/* ppt */
+/* 기본적으로 모든 이미지를 숨김 */
+/* .projectdetial-sample {
+  display: none;
 }
+.projectdetial-sample00 {
+  display: block;
+} */
+/* 호버 시 해당 이미지만 보이도록 함 */
+/* .project-profile-01:hover
+  + .projectpage-ground
+  .projectdetial-sample[data-index="2"],
+.project-profile-02:hover
+  + .projectpage-ground
+  .projectdetial-sample[data-index="3"],
+.project-profile-03:hover
+  + .projectpage-ground
+  .projectdetial-sample[data-index="4"] {
+  display: inline-block;
+} */

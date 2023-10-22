@@ -26,7 +26,8 @@
     <link rel="stylesheet" href="./css/projectpage.css" />
 
     <script defer src="./js/popup.js"></script>
-    <script defer src="./js/projectdetail.js"></script>
+    <!-- <script defer src="./js/projectdetail.js"></script> -->
+    <script defer src="./js/ppt.js"></script>
 
     <title>meettro</title>
     <link rel="icon" href="favicon.png" />
@@ -120,7 +121,10 @@
       <div class="profile-box">
         <div class="profile project-profile-01">
           <div class="profile-img-box">
-            <img src="./images/profile-sample01.png" class="profile-img" />
+            <img
+              src="./images/profile-sample01.png"
+              class="profile-img profile-img01"
+            />
           </div>
           <div class="profile-name">ME</div>
         </div>
@@ -147,24 +151,33 @@
     <div class="projectpage-ground">
       <!-- <div id="ground-line-contianer"></div> -->
       <img
-        class="projectdetial-sample"
+        class="projectdetial-sample-default"
         src="./images/projectdetail-sample00.png"
       />
       <img
-        class="projectdetial-sample"
+        class="projectdetial-sample-click"
         src="./images/projectdetail-sample01.png"
+        data-index="0"
       />
       <img
-        class="projectdetial-sample"
+        class="projectdetial-sample projectdetial-sample01"
         src="./images/projectdetail-sample02.png"
+        data-index="0"
       />
       <img
-        class="projectdetial-sample"
+        class="projectdetial-sample projectdetial-sample02"
         src="./images/projectdetail-sample03.png"
+        data-index="1"
       />
       <img
-        class="projectdetial-sample"
+        class="projectdetial-sample projectdetial-sample03"
         src="./images/projectdetail-sample04.png"
+        data-index="2"
+      />
+      <img
+        class="projectdetial-sample projectdetial-sample04"
+        src="./images/projectdetail-sample05.png"
+        data-index="3"
       />
     </div>
   </body>
