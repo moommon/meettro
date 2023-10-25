@@ -1,3 +1,6 @@
+body {
+  font-family: "SUIT", sans-serif;
+}
 a {
   cursor: pointer;
   text-decoration: none;
