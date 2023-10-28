@@ -213,21 +213,21 @@ body {
 
 /* .projectpage-ground .projectdetial-sample:nth-child(1) {
 }
-
-.projectpage-ground .projectdetial-sample:nth-child(2) {
+ */
+.projectpage-ground .projectdetial-sample02 {
   display: none;
 }
 
-.projectpage-ground .projectdetial-sample:nth-child(3) {
+.projectpage-ground .projectdetial-sample03 {
   display: none;
 }
 
-.projectpage-ground .projectdetial-sample:nth-child(4) {
+.projectpage-ground .projectdetial-sample04 {
   display: none;
 }
-.projectpage-ground .projectdetial-sample:nth-child(5) {
+.projectpage-ground .projectdetial-sample05 {
   display: none;
-} */
+}
 
 /* ppt */
 /* 기본적으로 모든 이미지를 숨김 */
