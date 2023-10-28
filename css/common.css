@@ -1,6 +1,12 @@
+@font-face {
+  font-family: "YourFontName";
+  src: url("./MinGothic-Regular.woff") format("woff");
+}
+
 body {
   font-family: "SUIT", sans-serif;
 }
+
 a {
   cursor: pointer;
   text-decoration: none;
