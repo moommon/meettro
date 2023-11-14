@@ -43,7 +43,7 @@ function start(event) {
   );
   event.preventDefault();
 }
-
+//그리기
 function draw(event) {
   if (is_drawing) {
     context.lineTo(
@@ -62,3 +62,16 @@ function draw(event) {
   //   event.preventDefault();
 }
 console.log(canvasWidth);
+
+// //이미지 이동
+
+// document.addEventListener("DOMContentLoaded", function () {
+//   // 2초 후에 이미지 위치 및 크기 변경
+//   setTimeout(function () {
+//     const logo = document.querySelector(".home-logo");
+//     logo.style.top = "20px"; // 이동할 Y 좌표
+//     logo.style.left = "50px"; // 이동할 X 좌표
+//     logo.style.width = "243px"; // 축소할 너비
+//     logo.style.margin = "0";
+//   }, 2000); // 2초 (2000 밀리초)
+// });

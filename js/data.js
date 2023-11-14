@@ -120,7 +120,7 @@ export const results = [
   {
     title: "효율적으로 많은 일을 해결하는",
     tool: "포크레인",
-    character: "/images/다이너마이트.png",
+    character: "/images/포크레인.png",
     results: ["효율적으로 많은 일을 해결하는 포크레인!"],
   },
   {
