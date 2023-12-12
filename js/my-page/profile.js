@@ -65,10 +65,6 @@
 
       targ.style.left = x + "px";
       targ.style.top = y + "px";
-      // if (currentDropZone === dropArea) {
-      //   targ.style.left = x + "px";
-      //   targ.style.top = y + "px";
-      // }
     } else {
       console.log("draggable 포함 X");
       // 클론된 요소가 드롭 영역 내부로 이동
@@ -147,4 +143,13 @@
       currentDropZone = null;
     }
   }
+  function resetToInitialState() {
+    // 모든 클론된 요소를 삭제
+    const clonedElements = document.querySelectorAll(".draggabled");
+    clonedElements.forEach((element) => {
+      element.remove();
+    });
+  }
+  const resetButton = document.querySelector("#profile_reset");
+  resetButton.addEventListener("click", resetToInitialState);
 })();

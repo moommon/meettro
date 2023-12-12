@@ -16,50 +16,63 @@
       href="https://cdn.jsdelivr.net/gh/sunn-us/SUIT/fonts/static/woff2/SUIT.css"
       rel="stylesheet"
     />
-
-    <!-- <link
-      href="https://cdn.jsdelivr.net/gh/sunn-us/SUIT/fonts/variable/woff2/SUIT-Variable.css"
-      rel="stylesheet"
-    /> -->
-
+    <link rel="stylesheet" href="./css/font.css" />
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="stylesheet" href="./css/projectpage.css" />
+    <link rel="stylesheet" href="./css/project/project.css" />
+    <link rel="stylesheet" href="./css/common.css" />
 
-    <script defer src="./js/popup.js"></script>
-    <!-- <script defer src="./js/projectdetail.js"></script> -->
-    <script defer src="./js/ppt.js"></script>
+    <script src="./js/constant/serverUrl.js"></script>
+    <script type="module" defer src="./js/popup.js"></script>
+    <script type="module" defer src="./js/project/ground.js"></script>
+    <script type="module" defer src="./js/project/index.js"></script>
 
     <title>meettro</title>
     <link rel="icon" href="favicon.png" />
   </head>
+
   <body>
     <header class="header">
-      <div class="main-logo">
+      <div class="m-logo">
         <a href="./main.html">
-          <img src="./images/icon-M.png" class="main-logo main-logo-black" />
+          <img src="./images/icon-m.png" class="m-logo-img" />
         </a>
       </div>
       <div class="project-name">new project</div>
       <div class="main-menubox">
-        <div class="menubox-menu">
-          <div class="trigger-team"><img src="./images/icon-TEAM.png" /></div>
-          <!-- <a href="./newproject.html"> <img src="./images/plus-0910.png" /></a> -->
+        <div class="menubox-menu menu-btn trigger-patterns">
+          <div class="trigger-patterns">
+            <img src="./images/icon-patterns.png" class="menu-btn-icon" /><span
+              class="menu-btn-text"
+              >patterns</span
+            >
         </div>
-        <div class="menubox-menu">
-          <div class="trigger-todo"><img src="./images/icon-MENU.png" /></div>
-        </div>
-        <div class="menubox-menu">
-          <div class="trigger-todo">
-            <img src="./images/icon-SETTING.png" />
-          </div>
+      </div>
+        <div class="menubox-menu menu-btn">
+          <div class="team-menu">
+            <img src="./images/icon-members.png" class="menu-btn-icon" /><span
+              class="menu-btn-text"
+              >members</span
+            > 
         </div>
       </div>
     </header>
-    <div class="modal modal-team">
-      <div class="modal-content modal-content-team">
-        <span class="close-button close-button-team">&times;</span>
-        <div class="title">팀원 목록</div>
-        <form action="#post.php" method="POST">
+
+    
+    <div class="modal modal-team hidden">
+      <div class="modal-content modal-content-team modal__content">
+        <div class="modal__top">
+          <div class="modal__title">
+            <img class="modal__icon" src="images/icon-M.png" />
+            <h3 class="modal__text">팀원 목록</h3>
+          </div>
+          <div class="modal__close close-button close-button-team">
+            <button class="btn-close"><img src="./images/icon-x.png"></button>
+          </div>
+        </div>
+        <!-- <span class="close-button close-button-team ">&times;</span>
+        <div class="title">팀원 목록</div> -->
+        <form>
           <label for="email">새로운 팀원</label>
           <input
             type="text"
@@ -68,117 +81,126 @@
             class="id-search input-plus"
           />
         </form>
-        <div class="team-list">
-          <div class="team-list-person">
-            <img
-              class="team-list-profile"
-              src="./images/profile-sample02.png"
-            />
-            <div class="team-list-name">사용자 이름</div>
-          </div>
-          <div class="team-list-person">
-            <img
-              class="team-list-profile"
-              src="./images/profile-sample03.png"
-            />
-            <div class="team-list-name">사용자 이름</div>
-          </div>
-        </div>
+        <div id="teamList" class="team-list"></div>
       </div>
     </div>
-    <div class="modal modal-todo">
-      <div class="modal-content modal-content-todo">
-        <span class="close-button close-button-todo">&times;</span>
-        <div class="title">할 일 목록</div>
-        <form action="#post.php" method="POST" class="todo-form">
-          <div>
+    <div class="modal modal-todo" id="todo_modal">
+      <div class="modal-content modal-content-todo  modal__content">
+        <div class="modal__top">
+          <div class="modal__title">
+            <img class="modal__icon" src="images/icon-M.png" />
+            <h3 class="modal__text">팀원 목록</h3>
+          </div>
+          <div class="modal__close close-button close-button-todo">
+            <button class="btn-close"><img src="./images/icon-x.png"></button>
+          </div>
+        </div>
+        <!-- <span class="close-button close-button-todo">&times;</span>
+        <div class="title">할 일 목록</div> -->
+        <form class="todo-form">
+          <div class="todo-box">
             <label for="todo">새로운 할 일</label>
             <input
               type="text"
               name="todo"
               placeholder="할 일 추가"
               class="todo-add input-plus"
+              id="todo-text"
             />
           </div>
-          <div>
+          <div class="time-box">
             <label for="time">목표 시간</label>
             <input
               type="number"
               name="time"
-              placeholder="3"
               class="target-time"
+              max="24"
+              min="1"
             /><span class="times">시간</span>
-            <input type="button" name="추가" value="추가" class="add-button" />
+            
           </div>
+          <input type="button" name="추가" value="추가" class="add-button" />
         </form>
-
-        <div class="team-list">
-          <div class="team-list-person"></div>
+        
+        <!-- 할 일 목록-->
+        <div class="todo-list" id="todo-list">
+          <label>나의 할 일</label>
         </div>
+      </div>
+    </div>
+    <!-- 패턴 -->
+    <div class="modal modal-patterns hidden">
+      <div class="modal-content modal-content-patterns modal__content">
+        <div class="modal__top__patterns">
+          <div class="modal__title">
+            <img class="modal__icon" src="images/icon-M.png" />
+            <h3 class="modal__text">팀원 패턴 설정</h3>
+          </div>
+          <div class="modal__close close-button close-button-patterns">
+            <button class="btn-close"><img src="./images/icon-x.png"></button>
+          </div>
+        </div>
+        <!-- <span class="close-button close-button-team ">&times;</span>
+        <div class="title">팀원 목록</div> -->
+        <div class="modal-patterns-inner">
+          <div class="patterns-block-box">
+            <label>예시 블럭 패턴</label>
+            <div>
+              <img class="patterns-sample" src="./images/patterns-sample1.png">
+            </div>
+          </div>
+          <div class="patterns-member-box">
+            <label>패턴 설정</label>
+            <div class="patterns-member-box-inner">
+              <div class="patterns-member">
+                <img class="patterns-member-img" src="./images/patterns1.png">
+                <span class="btn20">선택 가능</span>
+              </div>
+              <div class="patterns-member">
+                <img class="patterns-member-img" src="./images/patterns1.png">
+                <span class="btn20">선택 가능</span>
+              </div>
+              <div class="patterns-member">
+                <img class="patterns-member-img" src="./images/patterns1.png">
+                <span class="btn20">선택 가능</span>
+              </div>
+              <div class="patterns-member">
+                <img class="patterns-member-img" src="./images/patterns1.png">
+                <span class="btn20">선택 가능</span>
+              </div>
+              <div class="patterns-member">
+                <img class="patterns-member-img" src="./images/patterns1.png">
+                <span class="btn20">선택 가능</span>
+              </div>
+              <div class="patterns-member">
+                <img class="patterns-member-img" src="./images/patterns1.png">
+                <span class="btn20">선택 가능</span>
+              </div>
+              
+            </div>
+          </div>
+          
+        </div>
+        <button class="btn-close btn60 btn-apply">적용하기</button>
+       
       </div>
     </div>
     <div class="projectpage-sky">
       <div class="profile-box">
         <div class="profile project-profile-01">
           <div class="profile-img-box">
-            <img
-              src="./images/profile-sample01.png"
-              class="profile-img profile-img01"
-            />
+            <img id="m_profile" class="profile-img" />
           </div>
           <div class="profile-name">ME</div>
         </div>
-        <div class="profile project-profile-02">
-          <div class="profile-img-box">
-            <img src="./images/profile-sample02.png" class="profile-img" />
-          </div>
-          <div class="profile-name">heejin</div>
-        </div>
-        <div class="profile project-profile-03">
-          <div class="profile-img-box">
-            <img src="./images/profile-sample03.png" class="profile-img" />
-          </div>
-          <div class="profile-name">Sauce</div>
-        </div>
-        <div class="profile project-profile-04">
-          <div class="profile-img-box">
-            <img src="./images/profile-sample04.png" class="profile-img" />
-          </div>
-          <div class="profile-name">mon</div>
-        </div>
       </div>
+      <img src="./images/tt-dontstop.gif" class="project-tt">
+      
     </div>
-    <div class="projectpage-ground">
-      <!-- <div id="ground-line-contianer"></div> -->
-      <img
-        class="projectdetial-sample-default"
-        src="./images/projectdetail-sample00.png"
-      />
-      <img
-        class="projectdetial-sample-click"
-        src="./images/projectdetail-sample01.png"
-        data-index="0"
-      />
-      <img
-        class="projectdetial-sample projectdetial-sample01"
-        src="./images/projectdetail-sample02.png"
-        data-index="0"
-      />
-      <img
-        class="projectdetial-sample projectdetial-sample02"
-        src="./images/projectdetail-sample03.png"
-        data-index="1"
-      />
-      <img
-        class="projectdetial-sample projectdetial-sample03"
-        src="./images/projectdetail-sample04.png"
-        data-index="2"
-      />
-      <img
-        class="projectdetial-sample projectdetial-sample04"
-        src="./images/projectdetail-sample05.png"
-        data-index="3"
-      />
-    </div>
+
+    <section class="land">
+      <!-- <div class="projectpage-ground"> -->
+      <div class="inner"></div>
+    </section>
   </body>
 </html>

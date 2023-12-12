@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- css초기화 -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"
+    />
+
+    <!-- 폰트 suit -->
+    <link
+      href="https://cdn.jsdelivr.net/gh/sunn-us/SUIT/fonts/static/woff2/SUIT.css"
+      rel="stylesheet"
+    />
+    <!--bootstrap-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/font.css" />
+    <link rel="stylesheet" href="./css/main/modal.css" />
+    <link rel="stylesheet" href="./css/main/main_sub.css" />
+    <script src="./js/constant/serverUrl.js"></script>
+    <script type="module" defer src="./js/main/checkSection.js"></script>
+    <script type="module" defer src="./js/main/modal.js"></script>
+    <script type="module" defer src="./js/main/section.js"></script>
+    <title>Document</title>
+    <style>
+      .sticky-parent {
+        height: 700vh;
+      }
+      .sticky {
+        position: sticky;
+        top: 0px;
+        max-height: 100vh;
+        overflow-x: hidden;
+        overflow-y: hidden;
+      }
+      .dim {
+        display: block;
+        min-width: 500px;
+        height: 100vh;
+        z-index: 3;
+      }
+      .dim img {
+        width: 300px;
+        margin-top: 350px;
+      }
+      .horizontal {
+        display: flex;
+      }
+      .br {
+        outline: solid;
+      }
+
+      @media (max-width: 620px) {
+        .dim {
+          display: block;
+          min-width: 100vw;
+          height: 100vh;
+        }
+      }
+
+      p {
+        font-size: 20px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      style="height: 70px; width: 100vw; position: fixed; z-index: 4"
+      class="br"
+    >
+      <p>Scroll</p>
+    </div>
+    <!--Just extra div for scrolling space-->
+
+    <div class="sticky-parent">
+      <div class="sticky">
+        <div class="horizontal">
+          <!--Horizantal conatiner with display flex-->
+
+          <!--Content Start-->
+          <div class="dim">
+            <img src="images/home-sample01.png" /><br /><a
+              class="project-name btn30"
+              href="./projectpage.html"
+              >meettro</a
+            >
+          </div>
+          <div class="dim">
+            <img src="images/home-sample01.png" /><br /><a
+              class="project-name btn30"
+              href="./projectpage.html"
+              >meettro</a
+            >
+          </div>
+          <div class="dim">
+            <img src="images/home-sample01.png" /><br /><a
+              class="project-name btn30"
+              href="./projectpage.html"
+              >meettro</a
+            >
+          </div>
+          <div class="dim">
+            <img src="images/home-sample01.png" /><br /><a
+              class="project-name btn30"
+              href="./projectpage.html"
+              >meettro</a
+            >
+          </div>
+          <div class="dim">
+            <img src="images/home-sample01.png" /><br /><a
+              class="project-name btn30"
+              href="./projectpage.html"
+              >meettro</a
+            >
+          </div>
+          <div class="dim">
+            <img src="images/home-sample01.png" /><br /><a
+              class="project-name btn30"
+              href="./projectpage.html"
+              >meettro</a
+            >
+          </div>
+          <!--Content End-->
+        </div>
+      </div>
+    </div>
+    <div class="ground" style="width: 100vw; position: fixed; z-index: 1">
+      <!--   -->
+      <div class="view_section">
+        <div>
+          <button id="allBtn" class="allmy-btn all-btn">ALL</button>
+        </div>
+        <div>
+          <button id="myBtn" class="allmy-btn my-btn">MY</button>
+        </div>
+      </div>
+    </div>
+    <!--Extra Scroll Space-->
+    <script>
+      "use strict";
+
+      // Adding scroll event listener
+      document.addEventListener("scroll", horizontalScroll);
+
+      //Selecting Elements
+      let sticky = document.querySelector(".sticky");
+      let stickyParent = document.querySelector(".sticky-parent");
+
+      let scrollWidth = sticky.scrollWidth;
+      let verticalScrollHeight =
+        stickyParent.getBoundingClientRect().height -
+        sticky.getBoundingClientRect().height;
+
+      //Scroll function
+      function horizontalScroll() {
+        //Checking whether the sticky element has entered into view or not
+        let stickyPosition = sticky.getBoundingClientRect().top;
+        if (stickyPosition > 1) {
+          return;
+        } else {
+          let scrolled = stickyParent.getBoundingClientRect().top; //how much is scrolled?
+          sticky.scrollLeft =
+            (scrollWidth / verticalScrollHeight) * -scrolled * 0.85;
+        }
+      }
+    </script>
+  </body>
+</html>

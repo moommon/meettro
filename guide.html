@@ -18,8 +18,8 @@
     />
 
     <!-- <link rel="stylesheet" href="./css/home.css" /> -->
-    <link rel="stylesheet" href="./css/ppt.css" />
     <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/font.css" />
 
     <!-- <script type="module" defer src=""></script>
     <script type="module" defer src=""></script> -->
@@ -28,22 +28,24 @@
     <link rel="icon" href="favicon.png" />
     <title>meettro</title>
   </head>
+
   <body>
     <header>
       <a href="index.html" class="previous">
         <img src="./images/icon-left.png" class="previous-button" />
+        <img src="./images/logo-ee.png" class="previous-logo" />
       </a>
-      <a><img src="./images/logo-ee.png" class="test-logo-ee-img" /></a>
+      <div class="header-title">guide</div>
     </header>
-    <iframe
-      class="youtubelink"
-      width="100%"
-      height="1000px"
-      src="https://www.youtube.com/embed/Nbx3mIqb32Y?si=mEPflT8XxThM6cPc"
-      title="YouTube video player"
-      frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowfullscreen
-    ></iframe>
+    <div style="padding: 56.25% 0 0 0; position: relative">
+      <iframe
+        src="https://player.vimeo.com/video/883702116?badge=0&amp;autopause=0&amp;quality_selector=1&amp;player_id=0&amp;app_id=58479"
+        frameborder="0"
+        allow="autoplay; fullscreen; picture-in-picture"
+        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%"
+        title="meettro web guide"
+      ></iframe>
+    </div>
+    <script src="https://player.vimeo.com/api/player.js"></script>
   </body>
 </html>

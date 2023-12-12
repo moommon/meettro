@@ -18,9 +18,51 @@
     />
 
     <!-- <link rel="stylesheet" href="./css/home.css" /> -->
-    <link rel="stylesheet" href="./css/ppt.css" />
     <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/font.css" />
+    <style>
+      /* tt */
+      .tt-info {
+        margin: 20px auto;
+        display: block;
+        width: 800px;
+        height: 500px;
+        color: #222;
+      }
 
+      .tt-info .tt-img {
+        width: 280px;
+        margin-top: 50px;
+      }
+      .tt-info .tt-text-box {
+        display: inline-block;
+      }
+      .tt-info .tt-text-box .tt-title-text {
+        color: #222;
+        font-size: 32px;
+        font-weight: 700;
+        margin-bottom: 10px;
+      }
+
+      .tt-info .tt-text-box .tt-text {
+        color: #222;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 32px;
+      }
+
+      .tt-gif-box {
+        width: 100vw;
+
+        display: flex;
+        justify-content: space-evenly;
+        align-items: flex-end;
+      }
+      .tt-gif-box img {
+        width: 240px;
+        border-bottom: 2px solid #222;
+      }
+    </style>
     <!-- <script type="module" defer src=""></script>
     <script type="module" defer src=""></script> -->
     <!-- <script type="module" defer src="./js/share.js"></script> -->
@@ -28,17 +70,14 @@
     <link rel="icon" href="favicon.png" />
     <title>meettro</title>
   </head>
+
   <body>
     <header>
       <a href="index.html" class="previous">
         <img src="./images/icon-left.png" class="previous-button" />
+        <img src="./images/logo-ee.png" class="previous-logo" />
       </a>
-      <a href="index.html"
-        ><img src="./images/logo-ee.png" class="test-logo-ee-img"
-      /></a>
-      <a href="guide.html" class="next">
-        <img src="./images/icon-right.png" class="next-button"
-      /></a>
+      <div class="header-title">tt</div>
     </header>
 
     <div class="tt-info">
@@ -53,11 +92,13 @@
     </div>
 
     <div class="tt-gif-box">
-      <img src="./images/tt-dontstop.gif" class="tt-gif-1" />
+      <img src="./images/tt-walking.gif" class="tt-gif-1" />
       <img src="./images/tt-stopjump.gif" class="tt-gif-2" />
-      <img src="./images/tt-side.gif" class="tt-gif-3" />
+      <img src="./images/tt-dancing.gif" class="tt-gif-3" />
+      <img src="./images/tt-side.gif" class="tt-gif-4" />
+      <img src="./images/tt-nike.gif" class="tt-gif-5" />
     </div>
 
-    <img src="./images/logo+ee-full.gif" class="logo-gif" />
+    <!-- <img src="./images/logo+ee-full.gif" class="logo-gif" /> -->
   </body>
 </html>

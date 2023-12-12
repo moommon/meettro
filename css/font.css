@@ -1,0 +1,14 @@
+@font-face {
+  font-family: "MinGothic";
+  font-style: "normal";
+  font-weight: 400;
+  src: url("../font/MinGothic-Regular.woff") format("woff");
+}
+
+* {
+  font-family: "MinGothic";
+}
+
+div {
+  font-family: "MinGothic";
+}

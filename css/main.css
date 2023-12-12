@@ -4,6 +4,14 @@ body {
   width: 100%;
   height: 100%;
 }
+/* 스크롤바 숨기기 */
+body {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+body::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera*/
+}
 
 a {
   text-decoration: none;
@@ -12,10 +20,9 @@ a {
 
 /* header */
 header {
-  height: 40px;
+  height: 70px;
   width: 100vw;
   display: flex;
-  padding: 25px 0 10px 0;
 }
 
 header div {
@@ -25,84 +32,157 @@ header div {
 }
 
 header img {
-  /* height: 40px; */
   position: relative;
 }
 
 header .main-logo {
-  left: 20px;
-  height: 55px;
-  margin-top: -5px;
+  left: 26px;
+  height: 60px;
+  margin-top: 12px;
+}
+header .main-logo .main-logo-gif {
+  height: 60px;
 }
 
-header .main-logo-white:hover {
-  display: none;
-}
-
-/* header .plus-button {
-  left: calc(50vw - 20px);
-  width: 40px;
-  height: 40px;
-}
-header .plus-button-white:hover {
-  display: none;
-}
-
-header .menu-button {
-  right: 20px;
-}
-header .menu-button-white:hover {
-  display: none;
-} */
 header .main-menubox {
+  margin-top: 32px;
   position: absolute;
-  height: 40px;
   right: 50px;
   display: flex;
   flex-wrap: wrap;
-  gap: 50px;
-}
-header .main-menubox .menubox-menu {
-  width: 40px;
-}
-header .main-menubox .menubox-menu img {
-  width: 40px;
-  height: 40px;
+  gap: 60px;
 }
 
-/* horizontal-scroll */
-.horizontal-scroll-box {
-  /* top: 0; */
-  height: 100%;
-}
-.slider {
-  display: flex;
-  align-items: flex-start;
+.ground {
+  width: calc(100vw - 100px);
   position: absolute;
-  height: 400px;
-  top: 500px;
-  left: calc(50% - 570px);
-  transition: transform 0.3s;
+  top: 600px;
+  border-top: 1.5px #000 solid;
+  height: calc(100vh - 605px);
+  background-image: url(/images/ground.png);
+  background-size: 2000px;
+  background-repeat: no-repeat;
 }
-.slider li {
-  flex: none;
-  /* display: flex; */
-  justify-content: center;
+
+.all_section {
+}
+
+.view_section {
+  position: fixed;
+  display: inline;
+  top: 600px;
+  left: 50px;
+}
+
+.allmy-btn {
+  font-family: SUIT;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  display: inline-block;
+  height: 28px;
+  padding: 7.5px 0;
+  position: absolute;
+  transition: 0.2s;
+}
+.allmy-btn:hover {
+  border-bottom: 1.5px #222 solid;
+}
+.all-btn {
+  margin-top: -160px;
+}
+.my-btn {
+  margin-top: -110px;
+}
+
+/* hoirzontal scroll */
+/* hoirzontal scroll */
+
+.sticky-parent {
+  height: 3500px;
+  margin: 0 50px;
+}
+.sticky {
+  position: sticky;
+  top: 0px;
+  margin-left: 50px;
+  max-height: 100vh;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+.dim {
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  position: relative;
-  /* overflow: hidden; */
   height: 100%;
-  width: 200px;
-  /* aspect-ratio: 1/1; */
-  margin: 0 150px 0 0;
+  padding: 0 80px;
+}
+.dim:hover {
+}
+
+.dim img {
+  /* width: 250px; */
+  height: 250px;
+  margin-top: 350px;
+}
+
+.dim a {
+  font-size: 16px;
+}
+.dim .building-height {
+  /* display: none; */
+  position: absolute;
+  top: 300px;
+  opacity: 0;
+  transform: translateY(20px); /* 초기에는 아래에서 위로 20px 이동 */
+  transition: 0.3s;
+}
+.horizontal {
+  display: flex;
+}
+.br {
+  outline: solid;
+}
+/* 
+@media (max-width: 620px) {
+  .dim {
+    display: block;
+    min-width: 100vw;
+    height: 100vh;
+  }
+} */
+
+p {
+  font-size: 10em;
   text-align: center;
 }
-.slider li img {
-  width: 250px;
+
+/* scroll text */
+.scroll-text {
+  position: fixed;
+  top: 200px;
+  width: 100px;
+  height: 20px;
+  color: #222;
+  background-color: #fff;
+
+  text-align: center;
+  margin-left: calc(50vw - 50px);
+
+  letter-spacing: 2.8px;
+  font-family: "SUIT";
+  font-weight: 500;
+  font-size: 20px;
+
+  animation: blinkAnimation 3.3s 2 forwards; /* 1초 간격으로  infinite무한 반복 */
 }
-.ground {
-  width: 100%;
-  position: absolute;
-  top: 750px;
-  border-top: 2px #000 solid;
+
+@keyframes blinkAnimation {
+  0%,
+  100% {
+    opacity: 0; /* 처음과 마지막 keyframe에서 투명하게 설정 */
+  }
+  50% {
+    opacity: 1; /* 중간 keyframe에서 투명도를 최대로 설정하여 나타나는 효과 */
+  }
 }

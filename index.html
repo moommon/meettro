@@ -19,16 +19,100 @@
 
     <link rel="stylesheet" href="./css/home.css" />
     <link rel="stylesheet" href="./css/common.css" />
-
-    <script defer src="./js/home.js"></script>
+    <script src="./js/constant/serverUrl.js"></script>
+    <script type="module" defer src="./js/home.js"></script>
 
     <link rel="icon" href="favicon.png" />
     <title>meettro</title>
   </head>
   <body>
-    <div class="preview">
-      <img src="./images/tt-longstop.gif" class="preview-tt" />
-      <div class="preview-text">comming soon</div>
+    <div class="home-logo-box">
+      <a href="./main.html"
+        ><img src="./images/logo+ee-full.gif" alt="meettro" class="home-logo"
+      /></a>
     </div>
+    <div class="home-deco">
+      <img src="./images/home-grass1.png" class="home-grass" />
+      <img src="./images/home-tool1.png" class="home-tool" />
+      <img src="./images/home-tool2.png" class="home-tool" />
+      <img src="./images/home-tool3.png" class="home-tool" />
+    </div>
+
+    <div class="home-ground">
+      <canvas id="home-canvas"></canvas>
+      <!-- <img src="./images/ground.png" class="ground" /> -->
+      <div class="home-start-button">
+        <a href="./main.html" class="buttonblack"></a>
+        <a href="./main.html" class="buttonblack"></a>
+        <a href="./main.html" class="buttonblack"></a>
+        <a href="./main.html" class="buttonblack"></a>
+        <a href="./main.html" class="buttonblack"></a>
+        <a href="./main.html" class="home-start-button-link">dig in!</a>
+      </div>
+
+      <div class="home-guide-button">
+        <a href="./guide.html" class="buttonblack"></a>
+        <a href="./guide.html" class="buttonblack"></a>
+        <a href="./guide.html" class="buttonblack"></a>
+        <a href="./guide.html" class="home-guide-button-link">guide</a>
+      </div>
+      <div class="home-story-button">
+        <a href="./story.html" class="buttonblack"></a>
+        <a href="./story.html" class="buttonblack"></a>
+        <a href="./story.html" class="buttonblack"></a>
+        <a href="./story.html" class="home-story-button-link">story</a>
+      </div>
+      <div class="home-tt-button">
+        <a href="./tt.html" class="buttonblack"></a>
+        <a href="./tt.html" class="buttonblack"></a>
+        <a href="./tt.html" class="home-tt-button-link"
+          ><img src="./images/tt-white.png" class="home-tt-button-img"
+        /></a>
+      </div>
+
+      <div class="home-test-button">
+        <a href="./test.html" class="buttonblack"></a>
+        <a href="./test.html" class="buttonblack"></a>
+        <a href="./test.html" class="buttonblack"></a>
+        <a href="./test.html" class="buttonblack"></a>
+        <a href="./test.html" class="home-test-button-link">test</a>
+      </div>
+    </div>
+    <footer>
+      <div class="footer-inner">
+        <div class="footer-logo">
+          <img class="footer-logo-img" src="./images/logo-ee-full.png" />
+        </div>
+        <div class="footer-text">
+          <div class="footer-text-content">
+            <b>meettro</b>는 일의 과정을 시각적으로 보여주는 웹 기반의 협업
+            플랫폼입니다.<br />
+            땅을 파는 인터랙션을 가진 <b>meettro.com</b>에서 팀원들과 프로젝트를
+            만들고 밑으로 땅을 파며<br />
+            우리 팀만의 높은 건물을 쌓아 올리기까지의 과정을 함께하세요.
+          </div>
+        </div>
+        <div class="footer-profile">
+          <img src="./images/연주.png" class="profile-img" />
+          <div class="footer-profile-textbox">
+            <div class="footer-profile-name">양연주</div>
+            <div class="footer-profile-link">
+              saucejooooo@gmail.com<br />
+              saucejoo.com
+            </div>
+          </div>
+        </div>
+        <div class="footer-profile">
+          <img src="./images/예린.png" class="profile-img" />
+          <div class="footer-profile-textbox">
+            <div class="footer-profile-name">문예린</div>
+            <div class="footer-profile-link">
+              moonriseyell@gmail.com<br />
+              yelinmoon.com
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

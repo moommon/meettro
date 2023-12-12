@@ -4,29 +4,59 @@ body {
   padding: 0;
   height: 100%;
   overflow: hidden;
+  overflow-y: auto;
+  font-family: "MinGothic";
 }
+/* 
 header {
-  margin-top: 30px;
-  height: 50px;
+  height: 70px;
+  display: flex;
 }
 
 header .previous {
-  left: 30px;
-  position: relative;
+  width: 190px;
+  margin-left: 50px;
+  margin-top: 30px;
+  display: block;
 }
 
 header .previous-button {
-  width: 50px;
+  width: 36px;
 }
-header .test-logo-ee-img {
-  width: 200px;
-  position: relative;
-  top: -5px;
-  left: calc(50vw - 160px);
+
+header .previous-logo {
+  width: 160px;
+  margin-left: -11px;
 }
+
+header .header-title {
+  display: inline-block;
+  width: 100px;
+  font-size: 24px;
+  margin-top: 39px;
+  margin-left: calc(50vw - 290px);
+} */
+
 .profile-draw {
   height: auto;
 }
+.profile-draw .profile-draw-title-box {
+  /* margin-left: 32%; */
+  display: flex;
+  gap: 10px;
+  margin: 0 auto;
+  margin-top: 68px;
+  margin-bottom: 36px;
+  width: 594px;
+}
+.profile-draw .profile-draw-title {
+  font-size: 22px;
+  display: inline-block;
+}
+
+.profile-draw .profile-reset {
+}
+
 .container {
   position: relative;
   display: flex;
@@ -34,7 +64,7 @@ header .test-logo-ee-img {
   align-items: center;
   height: 100%;
   /* top: calc(50vh - 330px); */
-  margin-top: 5%;
+  margin-top: 50px;
 }
 
 .btn_layer {
@@ -324,39 +354,45 @@ button {
 
 .profile-button-box {
   display: flex;
-  width: 464px;
-  margin: 100px auto 0;
-  justify-content: space-between;
+  width: 594px;
+  margin: 30px auto 0;
+  justify-content: center;
   text-align: center;
   position: inherit;
 }
+
 .profile-btn {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 80px;
-  width: 214px;
   font-size: 20px;
-  font-weight: 500;
 }
 
 .profilename-inputbox {
-  width: 600px;
-  height: 100px;
-  text-align: center;
-  left: calc(50vw - 300px);
-  position: relative;
-  top: 100px;
-  color: #222;
+  margin: 0 auto;
+  margin-top: 68px;
+  /* margin-left: 32%; */
+  display: flex;
+  font-size: 22px;
+  width: 594px;
+  align-items: center;
 }
+.profilename-inputbox .profilename-title {
+  width: 50px;
+}
+
 .profilename-inputbox .profilename-input {
-  width: 300px;
-  height: 50px;
+  width: 340px;
+  height: 60px;
   border: 0;
-  border-bottom: solid #222 2px;
+  border-bottom: solid #222 1.5px;
   outline: none;
-  font-size: 24px;
-  padding: 0 10px;
+  font-size: 20px;
   text-align: center;
   color: #222;
+  margin-left: calc(50% - 220px);
+}
+.profilename-inputbox .profilename-input::placeholder {
+  color: #888;
+  font-size: 20px;
 }

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- css초기화 -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"
+    />
+
+    <!-- 폰트 suit -->
+    <link
+      href="https://cdn.jsdelivr.net/gh/sunn-us/SUIT/fonts/static/woff2/SUIT.css"
+      rel="stylesheet"
+    />
+
+    <!-- <link
+      href="https://cdn.jsdelivr.net/gh/sunn-us/SUIT/fonts/variable/woff2/SUIT-Variable.css"
+      rel="stylesheet"
+    /> -->
+
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/projectpage.css" />
+    <link rel="stylesheet" href="./css/font.css" />
+    <script src="./js/constant/serverUrl.js"></script>
+    <!-- <script defer src="./js/popup.js"></script> -->
+    <!-- <script defer src="./js/projectdetail.js"></script> -->
+    <!-- <script defer src="./js/ppt.js"></script> -->
+    <script type="module" defer src="./js/my-page/index.js"></script>
+
+    <title>meettro</title>
+    <link rel="icon" href="favicon.png" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="main-logo">
+        <a href="./main.html">
+          <img src="./images/icon-M.png" class="main-logo main-logo-black" />
+        </a>
+      </div>
+      <div class="project-name">문구나 이미지 변경</div>
+    </header>
+    <div class="modal modal-team">
+      <div class="modal-content modal-content-team">
+        <span class="close-button close-button-team">&times;</span>
+        <div class="title">팀원 목록</div>
+        <form action="#post.php" method="POST">
+          <label for="email">새로운 팀원</label>
+          <input
+            type="text"
+            name="id"
+            placeholder="아이디 검색"
+            class="id-search input-plus"
+          />
+        </form>
+        <div class="team-list">
+          <div class="team-list-person">
+            <img
+              class="team-list-profile"
+              src="./images/profile-sample02.png"
+            />
+            <div class="team-list-name">사용자 이름</div>
+          </div>
+          <div class="team-list-person">
+            <img
+              class="team-list-profile"
+              src="./images/profile-sample03.png"
+            />
+            <div class="team-list-name">사용자 이름</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal modal-todo">
+      <div class="modal-content modal-content-todo">
+        <span class="close-button close-button-todo">&times;</span>
+        <div class="title">할 일 목록</div>
+        <form action="#post.php" method="POST" class="todo-form">
+          <div>
+            <label for="todo">새로운 할 일</label>
+            <input
+              type="text"
+              name="todo"
+              placeholder="할 일 추가"
+              class="todo-add input-plus"
+            />
+          </div>
+          <div>
+            <label for="time">목표 시간</label>
+            <input
+              type="number"
+              name="time"
+              placeholder="3"
+              class="target-time"
+            /><span class="times">시간</span>
+            <input type="button" name="추가" value="추가" class="add-button" />
+          </div>
+        </form>
+
+        <div class="team-list">
+          <div class="team-list-person"></div>
+        </div>
+      </div>
+    </div>
+    <div class="projectpage-sky">
+      <div class="profile-box">
+        <div class="profile project-profile-01">
+          <div class="profile-img-box">
+            <img class="my_profile" style="width: 115px; height: 110px" />
+            <!-- 이미지 크기 조정 필요-->
+          </div>
+          <div class="profile-name"></div>
+        </div>
+      </div>
+    </div>
+    <div class="projectpage-ground">
+      <img
+        class="projectdetial-sample-default"
+        src="./images/projectdetail-sample00.png"
+      />
+    </div>
+  </body>
+</html>

@@ -16,74 +16,200 @@
       href="https://cdn.jsdelivr.net/gh/sunn-us/SUIT/fonts/static/woff2/SUIT.css"
       rel="stylesheet"
     />
+    <!--bootstrap-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
 
+    <link rel="stylesheet" href="./css/common.css" />
     <link rel="stylesheet" href="./css/main.css" />
-
-
-    <script defer src="./js/horizontal-scroll.js"></script>
+    <link rel="stylesheet" href="./css/font.css" />
+    <link rel="stylesheet" href="./css/main/modal.css" />
+    <link rel="stylesheet" href="./css/main/main_sub.css" />
+    <script src="./js/constant/serverUrl.js"></script>
+    <script type="module" defer src="./js/main/checkSection.js"></script>
+    <script type="module" defer src="./js/main/modal.js"></script>
+    <script type="module" defer src="./js/main/section.js"></script>
 
     <title>meettro</title>
     <link rel="icon" href="favicon.png" />
+    
   </head>
+
   <body>
-    <header class="header">
+    <header class="header" style="position: fixed; z-index: 10;">
       <div class="main-logo">
         <a href="./index.html">
-          <img
-            src="./images/logo-ee-full.gif"
-            class="main-logo main-logo-black" />
+          <img src="./images/logo-ee-full.gif" class="main-logo-gif" />
         </a>
+      </div>
+      <div class="main-menubox">
+        <div class="menubox-menu menu-btn">
+          <a id="my-profile">
+            <img src="./images/icon-my.png" class="menu-btn-icon" /><span
+              class="menu-btn-text"
+              >my profile</span
+            ></a
+          >
         </div>
-        <div class="main-menubox">
-          <div class="menubox-menu">
-            <a href="./newproject.html"> <img src="./images/icon-NEW.png" /></a>
+        <div class="menubox-menu menu-btn">
+          <a id="newProject"
+            ><img src="./images/icon-NEW.png" class="menu-btn-icon" /><span
+              class="menu-btn-text"
+              >new project</span
+            ></a
+          >
+        </div>
+        <div class="menubox-menu menu-btn" id="open_btn">
+          <a
+            ><img src="./images/icon-SETTING.png" class="menu-btn-icon" />
+            <span id="login-text" class="menu-btn-text">login</span></a
+          >
+        </div>
+        <!--modal section -->
+        <div class="modal hidden">
+          <div class="modal__background"></div>
+          <div class="modal__content">
+            <div class="modal__top">
+              <div class="modal__title">
+                <img class="modal__icon" src="images/icon-M.png" />
+                <h3 class="modal__text">로그인 / 회원가입</h3>
+              </div>
+              <div class="modal__close">
+                <button class="btn-close"><img src="./images/icon-x.png"></button>
+              </div>
+            </div>
+
+            <div id="modal_section" class="modal__section">
+              <div class="modal__maintext">로그인 또는 회원가입 후 </br>meettro를 이용해보세요.</div>
+              <div class="modal__subtext">이름만으로 간단히 회원가입이 가능합니다!</div>
+              <div class="modal__btnbox">
+                <button id="login" class="btn60">로그인</button>
+                <button id="signup" class="btn60">회원가입</button>
+              </div>
+            </div>
+            <div id="show_login_section" class="hidden">
+              <!-- <div class="modal__maintext">이름</h3> -->
+              <input type="text" class="input-username" placeholder="이름을 입력해주세요."/>
+              <div class="modal__btnbox">
+              <button id="login_btn" class="btn60">로그인</button></div>
+            </div>
           </div>
-          <div class="menubox-menu">
-            <a href="#"> <img src="./images/icon-MENU.png" /></a>
-          </div>
-          <div class="menubox-menu">
-            <a href="#"> <img src="./images/icon-SETTING.png" /></a>
-          </div>
-      <!-- </div>
-      <div class="plus-button plus-button-black">
-        <a href="./newproject.html"> <img src="./images/plus-black.png" /></a>
+        </div>
       </div>
-      <div class="plus-button plus-button-white">
-        <a href="./newproject.html"> <img src="./images/plus-white.png" /></a>
-      </div>
-      <div class="menu-button">
-        <a href="./index.html">
-          <img
-            src="./images/menu-black.png"
-            class="menu-button menu-button-black" />
-          <img
-            src="./images/menu-white.png"
-            class="menu-button menu-button-white"
-        /></a>
-      </div> -->
     </header>
-    <section class="horizontal-scroll-box">
-      <div class="main-horizontal-scroll">
-        <ul class="slider">
-          <li>
-            <img src="images/home-sample01.png" /><br /><span>meettro</span>
-          </li>
-          <li>
-            <img src="images/home-sample02.png" /><br /><span>hi project</span>
-          </li>
-          <li>
-            <img src="images/home-sample03.png" /><br /><span>my project</span>
-          </li>
-          <li><img src="images/home-sample06.png" /><br /><span>new!</span></li>
-          <li>
-            <img src="images/home-sample05.png" /><br /><span>meettro</span>
-          </li>
-          <li>
-            <img src="images/home-sample04.png" /><br /><span>meettro</span>
-          </li>
-        </ul>
+
+    <div class="ground" style="position: fixed; margin: 0 50px">
+      
+     
+    </div>
+
+    <!--All 버튼 눌렀을 때 나오는 섹션 -->
+    <div id="all_section">
+      <div class="sticky-parent">
+        <div class="sticky">
+          <div class="horizontal"> <!--Horizantal conatiner with display flex-->
+    
+            <!--Content Start-->
+            <div class="dim" id="dimElement1"> <img src="images/block-sample-01.png" /><br /><a class="project-name btn30" href="./projectpage.html">meettro</a><span class="building-height" id="buildingHeightElement1">1000m</span></div>
+            <div class="dim" id="dimElement2"><img src="images/block-sample-02.png" /><br /><a class="project-name btn30" href="./projectpage.html">new</a><span class="building-height" id="buildingHeightElement2">1000m</span></div>
+            <div class="dim" id="dimElement3"> <img src="images/block-sample-03.png" /><br /><a class="project-name btn30" href="./projectpage.html">콘텐츠 미디어팀</a><span class="building-height" id="buildingHeightElement3">1000m</span></div>
+            <div class="dim" id="dimElement4"><img src="images/block-sample-04.png" /><br /><a class="project-name btn30" href="./projectpage.html">예술의 이해 5조</a><span class="building-height" id="buildingHeightElement4">1000m</span></div>
+            <div class="dim" id="dimElement5"><img src="images/block-sample-05.png" /><br /><a class="project-name btn30" href="./projectpage.html">예술의 이해 2조</a><span class="building-height" id="buildingHeightElement5">1000m</span></div>
+            <div class="dim" id="dimElement6"> <img src="images/block-sample-06.png" /><br /><a class="project-name btn30" href="./projectpage.html">맛플레이스 개발팀</a><span class="building-height" id="buildingHeightElement6">1000m</span></div>
+            <div class="dim" id="dimElement7"> <img src="images/block-sample-07.png" /><br /><a class="project-name btn30" href="./projectpage.html">meettro</a><span class="building-height" id="buildingHeightElement7">1000m</span></div>
+            <div class="dim" id="dimElement8"> <img src="images/block-sample-08.png" /><br /><a class="project-name btn30" href="./projectpage.html">meettro</a><span class="building-height" id="buildingHeightElement8">1000m</span></div>
+            <div class="dim" id="dimElement9"> <img src="images/block-sample-09.png" /><br /><a class="project-name btn30" href="./projectpage.html">meettro</a><span class="building-height" id="buildingHeightElement9">1000m</span></div>
+            <!--Content End-->
+    
+          </div>
+        </div>
       </div>
-    </section>
-    <div class="ground"></div>
+      
+    </div>
+    <!--All 섹션 끝 -->
+    <!--my 버튼 눌렀을 때 나오는 섹션 -->
+
+    <div id="my_section" style="display: none">
+      <div class="sticky-parent">
+        <div class="sticky">
+          <div class="horizontal myPageClick"> <!--Horizantal conatiner with display flex-->
+    
+            <!--Content Start-->
+            <div class="dim" id="dimElement11"> <img src="images/block-sample-11.png" /><br /><a class="project-name btn30" href="./projectpage.html">내 프로젝트1</a><span class="building-height" id="buildingHeightElement11">1000m</span></div>
+            <div class="dim" id="dimElement12"><img src="images/block-sample-12.png" /><br /><a class="project-name btn30" href="./projectpage.html">내 프로젝트2</a><span class="building-height" id="buildingHeightElement12">1000m</span></div>
+            <div class="dim" id="dimElement13"> <img src="images/block-sample-13.png" /><br /><a class="project-name btn30" href="./projectpage.html">내 프로젝트3</a><span class="building-height" id="buildingHeightElement13">1000m</span></div>
+            
+            <!--Content End-->
+    
+          </div>
+        </div>
+      </div>
+      <!-- <section class="horizontal-scroll-box">
+        <div class="main-horizontal-scroll">
+          <ul class="slider">
+            <li class="myPageClick">
+              <img src="images/home-sample01.png" /><br /><span class="project-name btn30"
+                >My Project</span
+              >
+            </li>
+            <li>
+              <img src="images/home-sample06.png" /><br /><span class="project-name btn30"
+                >My Project2</span
+              >
+            </li>
+            <li>
+              <img src="images/home-sample05.png" /><br /><span class="project-name btn30"
+                >My Project3</span
+              >
+            </li>
+          </ul>
+        </div>
+      </section> -->
+    </div>
+    <!--my 버튼 섹션 끝 -->
+    <div class="view_section">
+      <div>
+        <button id="allBtn" class="allmy-btn all-btn">
+          ALL
+        </button>
+      </div>
+      <div>
+        <button id="myBtn" class="allmy-btn my-btn">MY</button>
+      </div>
+    </div>
+
+    <div class="scroll-text">scroll</div>
+
+    <script>
+      // horizontal
+     "use strict"
+
+      // Adding scroll event listener
+      document.addEventListener('scroll', horizontalScroll);
+
+      //Selecting Elements
+      let sticky = document.querySelector('.sticky');
+      let stickyParent = document.querySelector('.sticky-parent');
+
+      let scrollWidth = sticky.scrollWidth;
+      let verticalScrollHeight = stickyParent.getBoundingClientRect().height-sticky.getBoundingClientRect().height;
+
+      //Scroll function 
+      function horizontalScroll(){
+
+          //Checking whether the sticky element has entered into view or not
+          let stickyPosition = sticky.getBoundingClientRect().top;
+          if(stickyPosition > 1){
+              return;
+          }else{
+              let scrolled = stickyParent.getBoundingClientRect().top; //how much is scrolled?
+              sticky.scrollLeft =(scrollWidth/verticalScrollHeight)*(-scrolled)*0.85;
+          
+          }
+      }
+    </script>
   </body>
+  
 </html>
