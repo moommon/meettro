@@ -226,16 +226,9 @@ a {
   padding: 0 30px 0 30px;
   font-size: 16px;
   font-style: normal;
-  line-height: 145%; /* 23.2px */
+  line-height: 24px;
   letter-spacing: -0.48px;
   word-break: keep-all;
-}
-.result h3 {
-  font-size: 30px;
-  font-weight: 700;
-  line-height: 1.4;
-  text-align: center;
-  margin: 40px auto 20px;
 }
 
 .result-button-box {
@@ -266,7 +259,7 @@ a {
   }
   .test-title-box {
     color: #222;
-    margin-top: 130px;
+    margin-top: 80px;
     margin-left: 0;
 
     position: relative;
@@ -283,15 +276,22 @@ a {
     text-align: center;
     line-height: 120%;
   }
+  .test-img-box {
+    height: 180px;
+    width: 100vw;
+  }
   .test-img-box .test-tt-img {
     margin-left: 10vw;
     height: 80px;
-    margin-top: 135px;
+    margin-top: 100px;
   }
   .test-img-box .test-tools-img {
-    margin-top: 116px;
+    margin-top: 81px;
     height: 100px;
     margin-left: 45vw;
+  }
+  .start-box {
+    height: calc(100vh - 490px);
   }
 
   /* question */
@@ -304,7 +304,7 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 130px auto 0;
+    margin: 100px auto 0;
     border: 1.5px #222 solid;
     z-index: 1;
   }
@@ -358,13 +358,16 @@ a {
   }
   .choice-box .choice {
     margin: 0 auto;
-    width: 320px;
+    width: 294px;
     height: 80px;
     font-size: 16px;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
+    word-break: keep-all;
+    line-height: 20px;
+    padding: 0 17px;
   }
 
   .question-tt {
@@ -386,9 +389,9 @@ a {
     display: flex;
     align-items: center;
     width: 100%;
-    height: calc(100vh - 550px);
+    height: calc(100vh - 500px);
     flex-direction: column;
-    margin-top: 475px;
+    margin-top: 400px;
     background-image: url(/images/ground.png);
     background-size: 2000px;
     border-top: 1.5px solid #222;
@@ -400,17 +403,17 @@ a {
     height: 450px;
     border: 2px solid #222;
     background-color: #fff;
-    margin-top: 100px;
+    margin-top: 60px;
     margin-left: calc(50vw - 150px);
   }
   .result-box .page-title {
     font-size: 18px;
-    margin: 26px 0 9px 30px;
+    margin: 20px 0 9px 24px;
   }
   .result-box .page-tool {
     font-size: 45px;
     letter-spacing: -4px;
-    margin-left: 30px;
+    margin-left: 24px;
   }
   .result-box .page-style {
     font-size: 18px;
@@ -418,14 +421,14 @@ a {
   }
 
   .tool-img {
-    width: 232px;
+    width: 220px;
     max-width: 600px;
     margin: 2px 34px 0 37.5px;
   }
   .result-line {
     width: 270px;
-    margin: -4px 14px 18px;
-    display: inline-block;
+    margin: -10px 14px 10px;
+    display: block;
   }
   .result {
     max-width: 600px;
@@ -433,23 +436,17 @@ a {
   }
   .result .box {
     padding: 0 22px;
-    font-size: 12px;
+    font-size: 14px;
     font-style: normal;
-    line-height: 145%; /* 20.3px */
+    line-height: 22px;
     letter-spacing: -0.42px;
-  }
-  .result h3 {
-    font-size: 30px;
-    font-weight: 700;
-    line-height: 1.4;
-    text-align: center;
-    margin: 40px auto 20px;
+    /* text-align: center; */
   }
 
   .result-button-box {
     display: flex;
     width: 300px;
-    margin: 100px auto 0;
+    margin: 130px auto 0;
     justify-content: space-between;
   }
   .result-button {
@@ -458,7 +455,7 @@ a {
     align-items: center;
     /* height: 80px; */
     /* width: 214px; */
-    font-size: 22px;
+    font-size: 16px;
     font-weight: 500;
   }
 }

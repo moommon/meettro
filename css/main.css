@@ -186,3 +186,44 @@ p {
     opacity: 1; /* 중간 keyframe에서 투명도를 최대로 설정하여 나타나는 효과 */
   }
 }
+.main-mobile {
+  display: none;
+}
+/* 모바일 */
+
+@media (max-width: 500px) {
+  .header,
+  .ground,
+  #all_section,
+  #my_section,
+  .view_section,
+  .scroll-text {
+    display: none;
+  }
+  .main-mobile {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .mobile-tt {
+    width: 100px;
+    height: 100px;
+    display: block;
+  }
+  .mobile-text {
+    font-size: 16px;
+    margin-top: 20px;
+    font-weight: 500;
+    line-height: 22px;
+    text-align: center;
+  }
+  .mobile-home {
+    font-size: 14px;
+    margin-top: 20px;
+    width: 120px;
+    text-align: center;
+  }
+}

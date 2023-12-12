@@ -62,6 +62,61 @@
         width: 240px;
         border-bottom: 2px solid #222;
       }
+
+      /* 모바일 */
+
+      @media (max-width: 500px) {
+        .tt-info {
+          margin: 10px auto;
+          display: flex;
+          width: 300px;
+          height: 300px;
+          color: #222;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          gap: 40px;
+        }
+
+        .tt-info .tt-img {
+          width: 240px;
+          height: 240px;
+          margin-top: 0;
+        }
+        .tt-info .tt-text-box {
+          display: inline-block;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+        .tt-info .tt-text-box .tt-title-text {
+          color: #222;
+          font-size: 24px;
+          font-weight: 700;
+          margin-bottom: 10px;
+        }
+
+        .tt-info .tt-text-box .tt-text {
+          color: #222;
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 22px;
+          text-align: center;
+        }
+
+        .tt-gif-box {
+          margin-top: 100px;
+          width: 100vw;
+          display: flex;
+          justify-content: space-evenly;
+          align-items: flex-end;
+        }
+        .tt-gif-box img {
+          width: 70px;
+          border-bottom: 1.5px solid #222;
+        }
+      }
     </style>
     <!-- <script type="module" defer src=""></script>
     <script type="module" defer src=""></script> -->
