@@ -20,7 +20,6 @@
     <link rel="stylesheet" href="./css/font.css" />
     <link rel="stylesheet" href="./css/profile-draw.css" />
     <link rel="stylesheet" href="./css/common.css" />
-    <script src="./js/constant/serverUrl.js"></script>
     <script type="module" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.js"></script>
     <script type="module" src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
 
@@ -265,11 +264,7 @@
         </div>
         <div id="form_section" class="myprofilename-inputbox">
           <div class="myprofilename-title">이름</div>
-          <input
-            type="text"
-            placeholder="2 - 8자 사이의 이름을 입력해주세요."
-            class="myprofilename-input"
-          />
+          <input type="text" placeholder="2 - 8자 사이의 이름을 입력해주세요." class="myprofilename-input" id="profile-name" />
           </div>
           <div class="myprofile-button-box">
             <span id="create_profile"  class="btn60 profile-btn">저장하기</span>

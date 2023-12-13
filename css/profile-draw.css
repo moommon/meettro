@@ -391,6 +391,7 @@ button {
   text-align: center;
   color: #222;
   margin-left: calc(50% - 220px);
+  font-family: MinGothic;
 }
 .profilename-inputbox .profilename-input::placeholder {
   color: #888;

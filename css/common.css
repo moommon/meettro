@@ -1,6 +1,6 @@
 @font-face {
   font-family: "MinGothic";
-  src: url("./MinGothic-Regular.woff") format("woff");
+  src: url("/font/MinGothic-Regular.woff") format("woff");
 }
 
 body {

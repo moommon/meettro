@@ -177,8 +177,8 @@ async function getUserList() {
                     // profileImg.src = clickedUser.profile_img;
                     profileImg.src = user.profile_img;
                     profileImg.className = "profile-img";
-                    profileImg.style =
-                      "width: 90px; height: 90px; margin: 10px; border: 1.5px solid #000;  border-radius: 50%;";
+                    // profileImg.style =
+                    //   "width: 90px; height: 90px; margin: 10px; border: 1.5px solid #000;  border-radius: 50%;";
                     profileImgBox.appendChild(profileImg);
 
                     // 사용자 이름 생성
