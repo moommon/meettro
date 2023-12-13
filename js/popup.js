@@ -184,7 +184,7 @@ async function getUserList() {
                     // 사용자 이름 생성
                     const userNameDiv = document.createElement("div");
                     userNameDiv.className = "profile-name";
-                    userNameDiv.style = "margin-bottom: 10px; margin-left:20px";
+                    // userNameDiv.style = "margin-bottom: 10px; margin-left:20px";
                     // userNameDiv.textContent = clickedUser.name;
                     userNameDiv.textContent = user.name;
 

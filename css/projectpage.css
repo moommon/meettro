@@ -607,3 +607,19 @@ header .main-menubox {
 .project-tt:hover + .project-tt-text {
   opacity: 1;
 }
+
+/* sample */
+.sample-project-default {
+  width: calc(100vw - 100px);
+}
+.sample-project {
+  width: calc(100vw - 100px);
+}
+
+.sample1-1,
+.sample1-2,
+.sample1-3,
+.sample1-4,
+.sample1-5 {
+  display: none;
+}
