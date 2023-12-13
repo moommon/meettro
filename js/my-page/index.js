@@ -1,4 +1,4 @@
-const server = "http://3.35.27.85:80/"; // adding for .env
+const server = "https://43.203.46.19/"; // adding for .env
 const name = document.querySelector(".profile-name");
 const saveProfile = document.querySelector("#save_user_profile");
 const imageListArea = document.querySelector(".profile-img-box");

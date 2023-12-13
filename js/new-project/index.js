@@ -1,7 +1,7 @@
 const startBtn = document.querySelector(".start-btn");
 const projectnameInput = document.querySelector(".projectname-input");
 
-const server = "http://3.35.27.85:80/";
+const server = "https://43.203.46.19/";
 
 // createProject handler
 async function handleCreateProject() {

@@ -1,4 +1,4 @@
-const server = "http://3.35.27.85:80/";
+const server = "https://43.203.46.19/";
 
 const projectTitle = document.querySelector(".project-name");
 const userName = document.querySelector(".profile-name");
