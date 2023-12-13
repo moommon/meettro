@@ -137,6 +137,9 @@ header .main-menubox {
   transform: translateY(20px); /* 초기에는 아래에서 위로 20px 이동 */
   transition: 0.3s;
 }
+.project-name {
+  word-break: nowrap;
+}
 .horizontal {
   display: flex;
 }
