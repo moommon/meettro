@@ -7,7 +7,7 @@ const test = document.querySelector("#profile-test-btn"); //test
  * target url
  * 임시로 지정 추후 .env, ignore 에 추가
  * */
-const server = config.SERVER_URL;
+const server = "http://3.35.27.85:80/";
 
 const json = {};
 /**

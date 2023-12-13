@@ -1,4 +1,4 @@
-const server = config.SERVER_URL;
+const server = "http://3.35.27.85:80/";
 
 const projectTitle = document.querySelector(".project-name");
 const userName = document.querySelector(".profile-name");

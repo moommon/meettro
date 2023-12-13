@@ -1,4 +1,4 @@
-const SERVER = config.SERVER_URL;
+import { SERVER } from "./constant/config.js";
 
 // 패턴
 var modalPatterns = document.querySelector(".modal-patterns");

@@ -11,7 +11,7 @@ const showLogin = modal.querySelector("#show_login_section");
 const loginBtn = modal.querySelector("#login_btn");
 const inputUsername = modal.querySelector(".input-username");
 
-const server = config.SERVER_URL;
+const server = "http://3.35.27.85:80/"; // local serve url
 
 function displayModal() {
   modal.classList.add("hidden");
