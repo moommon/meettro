@@ -138,7 +138,6 @@ header .main-menubox {
   transition: 0.3s;
 }
 .project-name {
-  word-break: nowrap;
 }
 .horizontal {
   display: flex;
