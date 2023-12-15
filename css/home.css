@@ -329,6 +329,41 @@ body {
   font-size: 14px;
 }
 
+
+/* scroll text */
+.scroll-text {
+  position: absolute;
+  top: 440px;
+  width: 100px;
+  height: 20px;
+  color: #222;
+  /* background-color: #fff; */
+
+  text-align: center;
+  margin-left: calc(50vw - 50px);
+
+  letter-spacing: 2.8px;
+  font-family: "SUIT";
+  font-weight: 500;
+  font-size: 20px;
+
+  animation: blinkAnimation 3.3s 2 forwards; /* 1초 간격으로  infinite무한 반복 */
+}
+
+@keyframes blinkAnimation {
+  0%,
+  100% {
+    opacity: 0; /* 처음과 마지막 keyframe에서 투명하게 설정 */
+  }
+  50% {
+    opacity: 1; /* 중간 keyframe에서 투명도를 최대로 설정하여 나타나는 효과 */
+  }
+}
+.main-mobile {
+  display: none;
+}
+
+
 /* 모바일 */
 
 @media (max-width: 500px) {
@@ -645,4 +680,6 @@ body {
     margin-top: 8px;
     font-size: 8px;
   }
+  .scroll-text {
+    display: none;
 }
