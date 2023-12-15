@@ -246,6 +246,17 @@ a {
   font-size: 22px;
   font-weight: 500;
 }
+.result-tools {
+  margin-top: 200px;
+  display: flex;
+  justify-content: space-between;
+}
+.result-tools img {
+  width: 200px;
+}
+.tools-none {
+  visibility: hidden;
+}
 
 /* 모바일 */
 
@@ -457,5 +468,8 @@ a {
     /* width: 214px; */
     font-size: 16px;
     font-weight: 500;
+  }
+  .result-tools {
+    display: none;
   }
 }
