@@ -56,13 +56,29 @@
     isDragging = true;
 
     console.log(`tagClassList =>${targ.className}`);
-
+    console.log("targ", targ);
     if (targ.className === "draggabled") {
       console.log("draggable 포함");
       // 이미 클론된 요소를 드롭 영역 내부에서 이동
-      const x = e.clientX - xpos - e.target.getBoundingClientRect().left;
-      const y = e.clientY - ypos - e.target.getBoundingClientRect().top;
+      const x =
+        e.clientX -
+        xpos -
+        e.target.closest(".drop-area").getBoundingClientRect().left;
+      const y =
+        e.clientY -
+        ypos -
+        e.target.closest(".drop-area").getBoundingClientRect().top;
+      // const x = e.clientX - xpos - 92.5;
+      // const y = e.clientY - ypos - 214.5;
 
+      // console.log("e.client", e.clientX, e.clientY);
+      // console.log("pos", xpos, ypos);
+      console.log(
+        "getBounding",
+        e.target.getBoundingClientRect().left,
+        e.target.getBoundingClientRect().top
+      );
+      // console.log("x,y", x, y);
       targ.style.left = x + "px";
       targ.style.top = y + "px";
       // if (currentDropZone === dropArea) {
@@ -80,8 +96,16 @@
       clonedElement.draggable = true;
       clonedElement.style.position = "absolute";
 
-      const x = e.clientX - xpos - e.target.getBoundingClientRect().left;
-      const y = e.clientY - ypos - e.target.getBoundingClientRect().top;
+      const x =
+        e.clientX -
+        xpos -
+        e.target.closest(".drop-area").getBoundingClientRect().left;
+      const y =
+        e.clientY -
+        ypos -
+        e.target.closest(".drop-area").getBoundingClientRect().top;
+      // const x = e.clientX - xpos - 92.5;
+      // const y = e.clientY - ypos - 214.5;
 
       clonedElement.style.left = x + "px";
       clonedElement.style.top = y + "px";
